@@ -6,8 +6,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/';
 import APropos from './pages/Home/a-propos';
 import Header from './components/Header';
-import Error from './components/Error'
+import Error from './components/Error';
+import Card from './components/Card';
 //import App from './App';
+//import annonces from 'annonces.json';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -19,6 +21,7 @@ ReactDOM.render(
             <Route path="/a-propos" element={<APropos />} />
             <Route path="*" element={<Error />} />
           </Routes>
+          <Card />
       </Router>
   </React.StrictMode>,
 document.getElementById('root')
