@@ -54,6 +54,38 @@ code {
   }
 }
 
+.slider {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+  .img-slider {
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+
+  .text-slider {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    color: #FFFFFF;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #F6F6F6;
+  border-radius: 20px 20px 20px 20px;
+  margin: 50px;
+  padding: 30px;
+}
+
 .card  {
   background-color: #FF6060;
   width: 340px;
@@ -70,14 +102,4 @@ code {
     padding-left: 30px;
     width: 35%;
   }
-}
-
-.main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #F6F6F6;
-    border-radius: 20px 20px 20px 20px;
-    margin: 50px;
-    padding: 30px;
-
 }
