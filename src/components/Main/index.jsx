@@ -1,6 +1,7 @@
-import '../../index.scss';
+import '../../index.css';
 import Card from '../../components/Card';
- 
+import Annonces from '../../annoncestest.js';
+
 function Main() {
     return (
         <div className="main">
@@ -12,6 +13,7 @@ function Main() {
             <Card />
             <Card />
             <Card />
+            <Annonces />
         </div>
     )
 }

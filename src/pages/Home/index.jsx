@@ -1,9 +1,11 @@
-import '../../App.scss';
+import '../../index.css';
+import Slider from '../../components/Slider'
 import Main from '../../components/Main';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
+      <Slider />
       <Main />
     </div>
   );
