@@ -29,8 +29,16 @@ document.getElementById('root')
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
-  </React.StrictMode>
+      <Router>
+      <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/a-propos" element={<APropos />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+      </Router>
+  </React.StrictMode>,
+document.getElementById('root')
 );*/
 
 // If you want to start measuring performance in your app, pass a function

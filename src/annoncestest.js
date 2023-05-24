@@ -4,14 +4,18 @@ const appartements = [
     'appt3',
 ]
 
+const index = [1, 2, 3]
+
 function List() {
     return (
         <ul>
             {appartements.map((appartement) => (
-                <li>{appartement}</li>
+                <li key={`${appartement}-${index}`}>{ appartement }</li>
             ))}
         </ul>
     )
 }
+
+console.log(List);
 
 export default List

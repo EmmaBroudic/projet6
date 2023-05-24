@@ -1,6 +1,7 @@
 import '../../index.css';
 import Card from '../../components/Card';
-import Annonces from '../../annoncestest.js';
+import Appartement from '../../components/Annonces';
+import Test from '../../annoncestest.js';
 
 function Main() {
     return (
@@ -13,7 +14,8 @@ function Main() {
             <Card />
             <Card />
             <Card />
-            <Annonces />
+            <Test />
+            <Appartement />
         </div>
     )
 }
