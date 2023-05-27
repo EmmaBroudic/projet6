@@ -2,7 +2,7 @@ import './home.css';
 import Imagetop from '../../components/Imagetop/imagetop.jsx'
 import Main from '../../components/Main/main.jsx';
 
-function App() {
+function Home() {
   return (
     <div className="app-container">
       <Imagetop />
@@ -11,7 +11,7 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
 
 /*      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

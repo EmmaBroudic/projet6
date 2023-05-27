@@ -1,9 +1,8 @@
-
 import { annonces } from '../../data/data.jsx';
 import './card.css';
  
 
-function appartements() {
+function Appartements() {
 
 	const categories = annonces.reduce(
 		(acc, appartement) =>
@@ -18,7 +17,7 @@ function appartements() {
 			))}
 
 			{annonces.map((appartement) => (
-				<p className="card" key={appartement.id}><h2>{appartement.title}</h2></p>
+				<figure className="card" key={appartement.id}><h2>{appartement.title}</h2></figure>
 			))}
 		</div>
 	)
@@ -28,4 +27,4 @@ function appartements() {
 console.log(annonces);
 
 
-export default appartements
+export default Appartements
