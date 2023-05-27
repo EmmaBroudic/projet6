@@ -12,9 +12,9 @@ function appartements() {
 	)
 
 	return (
-		<div>
+		<div className="card-container">
 			{categories.map((cat) => (
-				<p key={cat}>{cat}</p>
+				<span key={cat}>{cat}</span>
 			))}
 
 			{annonces.map((appartement) => (

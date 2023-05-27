@@ -1,18 +1,28 @@
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px;
+}
 
 .card  {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
     background-color: #FF6060;
     width: 340px;
     height: 340px;
     border-radius: 10px 10px 10px 10px;
-    margin: 20px;
   }
   
   h2 {
+    position: absolute;
     color: white;
     font-family: MontserratLight;
     font-size: 11pt;
     text-align: left;
-    padding-top: 80%;
-    padding-left: 30px;
-    width: 35%;
+    width: 45%;
+    bottom: 0;
   }
