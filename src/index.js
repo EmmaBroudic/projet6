@@ -6,21 +6,20 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/home.jsx';
 import APropos from './pages/Home/a-propos';
 import Error from './components/Error/error.jsx';
-
-//import App from './App';
-//import annonces from 'annonces.json';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Header/header.jsx';
+import Footer from './components/Footer/footer.jsx';
 
 ReactDOM.render(
   <React.StrictMode>
       <Router>
-      <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/a-propos" element={<APropos />} />
-            <Route path="*" element={<Error />} />
-          </Routes>
+        <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/a-propos" element={<APropos />} />
+              <Route path="*" element={<Error />} />
+            </Routes>
+        <Footer />
       </Router>
   </React.StrictMode>,
 document.getElementById('root')

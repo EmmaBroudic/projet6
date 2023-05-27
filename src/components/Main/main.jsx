@@ -1,12 +1,11 @@
 import './main.css';
-//import Card from '../Card/card.jsx';
-import Appartement from '../Annonces/annonces.jsx';
+import Card from '../Card/card.jsx';
 //import Test from '../../annonces.js';
 
 function Main() {
     return (
         <div className="main">
-            <Appartement />
+            <Card />
         </div>
     )
 }
