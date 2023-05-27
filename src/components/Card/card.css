@@ -1,0 +1,18 @@
+
+.card  {
+    background-color: #FF6060;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px;
+  }
+  
+  h2 {
+    color: white;
+    font-family: MontserratLight;
+    font-size: 11pt;
+    text-align: left;
+    padding-top: 80%;
+    padding-left: 30px;
+    width: 35%;
+  }

@@ -1,4 +1,4 @@
-import '../../index.css';
+import './main.css';
 import Card from '../Card/card.jsx';
 import Appartement from '../Annonces/annonces.jsx';
 import Test from '../../annoncestest.js';

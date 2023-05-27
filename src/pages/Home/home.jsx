@@ -1,4 +1,4 @@
-import '../../index.css';
+import './home.css';
 import Imagetop from '../../components/Imagetop/imagetop.jsx'
 import Main from '../../components/Main/main.jsx';
 

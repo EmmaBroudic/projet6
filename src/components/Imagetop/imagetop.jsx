@@ -1,5 +1,5 @@
 import img1 from '../../images/IMG1_slider.jpg';
-import '../../index.css';
+import './imagetop.css';
  
 function Imagetop() {
     return (

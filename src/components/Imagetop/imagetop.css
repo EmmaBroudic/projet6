@@ -1,0 +1,26 @@
+.image-top {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  
+  .img-top {
+    object-fit: cover;
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    z-index: 0;
+  }
+  
+  .text-img-top {
+    position: absolute;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    color: #FFFFFF;
+    width: 1240px;
+    height: 143px;
+    padding-top: 80px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    z-index: 1;
+  }
