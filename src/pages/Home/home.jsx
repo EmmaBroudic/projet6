@@ -1,11 +1,11 @@
 import '../../index.css';
-import Slider from '../../components/Slider'
-import Main from '../../components/Main';
+import Imagetop from '../../components/Imagetop/imagetop.jsx'
+import Main from '../../components/Main/main.jsx';
 
 function App() {
   return (
     <div className="app-container">
-      <Slider />
+      <Imagetop />
       <Main />
     </div>
   );

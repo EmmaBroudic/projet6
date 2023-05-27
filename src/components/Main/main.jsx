@@ -1,6 +1,6 @@
 import '../../index.css';
-import Card from '../../components/Card';
-import Appartement from '../../components/Annonces';
+import Card from '../Card/card.jsx';
+import Appartement from '../Annonces/annonces.jsx';
 import Test from '../../annoncestest.js';
 
 function Main() {

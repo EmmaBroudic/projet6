@@ -23,39 +23,7 @@ code {
     monospace;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 
-.header-logo {
-  width: 12%;
-  height: auto;
-  padding-left: 30px;
-}
-
-.menu {
-  font-family: Montserrat;
-  font-size: 16pt;
-  color: #FF6060;
-  text-decoration: none;
-  padding: 30px;
-  margin-top: 30px;
-}
-
-.menu:hover {
-  font-family: Montserrat;
-  font-size: 16pt;
-  color: #FF6060;
-  text-decoration: underline;
-  padding: 30px;
-  margin-top: 30px;
-}
 
 .app-container {
   display: flex;
@@ -63,12 +31,12 @@ code {
   align-items: center;
 }
 
-.slider {
+.image-top {
   display: flex;
   margin-bottom: 40px;
 }
 
-.img-slider {
+.img-top {
   object-fit: cover;
   width: 1240px;
   height: 223px;
@@ -76,7 +44,7 @@ code {
   z-index: 0;
 }
 
-.text-slider {
+.text-img-top {
   position: absolute;
   text-align: center;
   font-family: 'Montserrat';

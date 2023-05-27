@@ -1,5 +1,5 @@
 
-import { annonces } from '../../data/annonces.jsx';
+import { annonces } from '../../data/data.jsx';
 
 function appartements() {
 	const categories = annonces.reduce(
