@@ -1,7 +1,10 @@
 
 import { annonces } from '../../data/data.jsx';
+import './card.css';
+ 
 
 function appartements() {
+
 	const categories = annonces.reduce(
 		(acc, appartement) =>
 			acc.includes(appartement.category) ? acc : acc.concat(appartement.category),
@@ -10,16 +13,13 @@ function appartements() {
 
 	return (
 		<div>
-			<ul>
-				{categories.map((cat) => (
-					<li key={cat}>{cat}</li>
-				))}
-			</ul>
-			<ul>
-				{annonces.map((appartement) => (
-					<li key={appartement.id}>{appartement.title}</li>
-				))}
-			</ul>
+			{categories.map((cat) => (
+				<p key={cat}>{cat}</p>
+			))}
+
+			{annonces.map((appartement) => (
+				<p className="card" key={appartement.id}><h2>{appartement.title}</h2></p>
+			))}
 		</div>
 	)
 }
