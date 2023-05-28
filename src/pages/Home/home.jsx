@@ -1,6 +1,6 @@
-import './home.css';
-import Imagetop from '../../components/Image-top/image-top.jsx'
+import Imagetop from '../../components/Image-top/image-top.jsx';
 import Main from '../../components/Main/main.jsx';
+import './home.css';
 
 function Home() {
   return (

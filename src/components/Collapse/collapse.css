@@ -1,0 +1,19 @@
+.collapse-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.titre-collapse {
+    font-family: MontserratLight;
+    color: white;
+    background-color: blue;
+}
+
+.text-collapse {
+    font-family: MontserratLight;
+    color: black;
+    background-color: grey;
+}

@@ -6,6 +6,7 @@
   }
   
   .img-top {
+    position: relative;
     object-fit: cover;
     width: 1240px;
     height: 223px;

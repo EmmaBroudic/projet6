@@ -1,6 +1,5 @@
-import './main.css';
 import Card from '../Card/card.jsx';
-//import Test from '../../annonces.js';
+import './main.css';
 
 function Main() {
     return (

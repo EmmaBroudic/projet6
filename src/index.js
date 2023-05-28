@@ -1,14 +1,13 @@
 import React from 'react';
-//import ReactDOM from 'react-dom/client';
 import ReactDOM from 'react-dom';
-import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/home.jsx';
-import APropos from './pages/Home/a-propos';
+import APropos from './pages/Home/a-propos.jsx';
 import Error from './components/Error/error.jsx';
-import reportWebVitals from './reportWebVitals';
 import Header from './components/Header/header.jsx';
 import Footer from './components/Footer/footer.jsx';
+import './index.css';
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
