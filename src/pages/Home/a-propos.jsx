@@ -1,4 +1,4 @@
-import ImageDeuxTop from '../../components/Imagedeuxtop/imagedeuxtop.jsx'
+import ImageDeuxTop from '../../components/Image-deux-top/image-deux-top.jsx'
 import '../../App.css';
 
 function Home() {

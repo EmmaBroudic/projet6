@@ -1,5 +1,5 @@
 import './home.css';
-import Imagetop from '../../components/Imagetop/imagetop.jsx'
+import Imagetop from '../../components/Image-top/image-top.jsx'
 import Main from '../../components/Main/main.jsx';
 
 function Home() {

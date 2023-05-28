@@ -1,4 +1,4 @@
-import { annonces } from '../../data/data.jsx';
+import { annonces } from '../../data/annonces/annonces.jsx';
 import './card.css';
  
 
