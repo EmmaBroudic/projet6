@@ -5,15 +5,12 @@
     align-items: center;
 }
 
-
-.titre-collapse {
-    font-family: MontserratLight;
-    color: white;
-    background-color: blue;
-}
-
 .text-collapse {
-    font-family: MontserratLight;
-    color: black;
-    background-color: grey;
+    font-family: Montserrat;
+    color: #FF6060;
+    background-color: #F7F7F7;
+    width: 1023px;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
 }
