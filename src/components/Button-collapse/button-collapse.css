@@ -1,6 +1,6 @@
-.collapse-count {
+/*.collapse-count {
     display: none;
-}
+}*/
 
 .button-container {
     display: flex;
@@ -23,6 +23,7 @@
     color: white;
     font-family: MontserratBold;
     font-size: 25pt;
+    cursor: pointer;
 }
 
 .titre-collapse {

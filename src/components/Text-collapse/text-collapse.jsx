@@ -1,4 +1,3 @@
-import { infos } from '../../data/infos-a-propos/infos-a-propos.jsx';
 import './text-collapse.css';
 
 function TextCollapse(props) {
@@ -11,5 +10,3 @@ function TextCollapse(props) {
   }
   
   export default TextCollapse
-
-  console.log(infos)

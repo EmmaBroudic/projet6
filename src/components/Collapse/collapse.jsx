@@ -4,6 +4,7 @@ import './collapse.css';
 
 function Collapse() {
 
+  // déclarer fonction pour changement de class au click
   return (
     <div className="collapse-container">
         <Button>Fiabilité</Button>
