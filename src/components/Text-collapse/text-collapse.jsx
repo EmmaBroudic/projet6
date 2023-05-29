@@ -4,7 +4,7 @@ import './text-collapse.css';
 function TextCollapse(props) {
 
     return (
-      <div className="collapse-container">
+      <div>
         <p className="text-collapse">{props.children}</p>
       </div>
     );

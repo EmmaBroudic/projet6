@@ -4,7 +4,6 @@ import './collapse.css';
 
 function Collapse() {
 
-
   return (
     <div className="collapse-container">
         <Button>Fiabilité</Button>
