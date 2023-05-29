@@ -15,7 +15,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #FF6060;
+    background: linear-gradient(1deg, #704d4d, #FF6060);
     width: 340px;
     height: 340px;
     border-radius: 10px 10px 10px 10px;

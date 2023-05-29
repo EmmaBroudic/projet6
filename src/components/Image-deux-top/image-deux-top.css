@@ -1,11 +1,12 @@
-.image-top {
+.image-deux-top {
     display: flex;
     margin-bottom: 40px;
   }
   
-  .img-top {
+  .img-deux-top {
     object-fit: cover;
     width: 1240px;
     height: 223px;
     border-radius: 25px;
+    opacity: 2;
   }
