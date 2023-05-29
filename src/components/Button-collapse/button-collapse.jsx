@@ -1,19 +1,39 @@
-import React, { useState } from 'react';
+//import React, { useState } from 'react';
+//import Text from '../Text-collapse/text-collapse.jsx';
+import React from 'react';
+import flechhaut from '../../images/fleche-haut.png';
+import flechbas from '../../images/fleche-bas.png';
 import './button-collapse.css';
 
 function Button(props) {
-    // Déclare une nouvelle variable d'état, que l'on va appeler « count »
-    const [count, setCount] = useState(0);
-  
-    return (
-      <div className="button-container">
-        <p className="collapse-count">Vous avez cliqué {count} fois</p>
-        <h2 className="titre-collapse">{props.children}</h2>
-        <button className="button-count" onClick={() => setCount(count + 1)}>
-          ^
-        </button>
-      </div>
-    );
+
+  const addHide = (e) => {
+    console.log(e.target);
+    const buttonHide = document.querySelector(".buttonup");
+    const buttonShow = document.querySelector(".buttondown");
+
+    buttonHide.style.display = "none"
+    buttonShow.style.display = "block"
+  };
+
+  const addShow = (e) => {
+    console.log(e.target);
+    const buttonHide = document.querySelector(".buttonup");
+    const buttonShow = document.querySelector(".buttondown");
+
+    buttonHide.style.display = "block"
+    buttonShow.style.display = "none"
   }
-  
-  export default Button
+
+  return (
+    <div className="button-container">
+      <h2 className="titre-collapse">{props.children}</h2>
+      <button className="buttonup" onClick={addHide}><img src={flechhaut} alt="flèche vers le haut" /></button>
+      <button className="buttondown" onClick={addShow}><img src={flechbas} alt="flèche vers le bas" /></button>
+    </div>
+  );
+}
+
+export default Button;
+
+          /*<button className="test" onClick={this.addStyle}>^</button>*/

@@ -16,7 +16,7 @@
     margin-top: 20px;
 }
 
-.button-count {
+.buttonup, .buttondown {
     text-decoration: none;
     border: 0px;
     background-color: #FF6060;
@@ -24,6 +24,10 @@
     font-family: MontserratBold;
     font-size: 25pt;
     cursor: pointer;
+}
+
+.buttondown{
+    display: none;
 }
 
 .titre-collapse {
