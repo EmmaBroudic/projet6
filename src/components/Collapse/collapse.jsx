@@ -1,22 +1,43 @@
-import Button from '../Button-collapse/button-collapse.jsx';
-import Text from '../Text-collapse/text-collapse.jsx';
+import React, { useState } from 'react';
+import flechhaut from '../../images/fleche-haut.png';
+import flechbas from '../../images/fleche-bas.png';
+import Text from '../Text-collapse/text-collapse';
 import './collapse.css';
 
 function Collapse() {
+  // déclarer variable et fonction
+  const [buttonVisible, setButtonVisible] = useState(true);
 
-  // déclarer fonction pour changement de class au click
+  // fonction pour changer visibilité button
+  const changeButton = () => {
+    setButtonVisible(!buttonVisible);
+  };
+
   return (
     <div className="collapse-container">
-        <Button>Fiabilité</Button>
-        <Text>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</Text>
-        <Button>Respect</Button>
-        <Text>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</Text>
-        <Button>Service</Button>
-        <Text>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</Text>
-        <Button>Sécurité</Button>
-        <Text>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</Text>
+        <div className="button-container">
+          <p className="titre-collapse">Fiabilité</p>
+          {buttonVisible ? (
+            <button className="buttonup" onClick={changeButton}>
+              <img src={flechhaut} alt="flèche vers le haut" />
+            </button>
+          ) : (
+            <button className="buttondown" onClick={changeButton}>
+              <img src={flechbas} alt="flèche vers le bas" />
+            </button>
+          )}
+
+          {buttonVisible && (
+          <Text>
+            <p>
+              Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.
+            </p>
+          </Text>
+          )}
+        </div>
+
     </div>
   );
 }
 
-export default Collapse
+export default Collapse;
