@@ -32,3 +32,17 @@
     padding-bottom: 10px;
     margin-top: 20px;
 }
+
+p {
+    font-family: MontserratLight;
+    font-size: 14pt;
+    color: #FF6060;
+    background-color: #F7F7F7;
+    width: 1023px;
+    height: auto;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
