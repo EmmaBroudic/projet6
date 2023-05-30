@@ -3,11 +3,11 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
-    width: 90%;
   }
   
   .img-top {
     position: relative;
+    filter: brightness(70%);
     object-fit: cover;
     width: 1240px;
     height: 223px;
@@ -24,7 +24,5 @@
     width: 1240px;
     height: 143px;
     padding-top: 80px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 25px;
     z-index: 1;
   }

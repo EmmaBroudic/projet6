@@ -1,12 +1,8 @@
-.image-deux-top {
-    display: flex;
-    margin-bottom: 40px;
-  }
-  
-  .img-deux-top {
-    object-fit: cover;
-    width: 1240px;
-    height: 223px;
-    border-radius: 25px;
-    opacity: 2;
-  }
+.img-deux-top {
+  filter: brightness(70%);
+  object-fit: cover;
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  margin-bottom: 40px;
+}
