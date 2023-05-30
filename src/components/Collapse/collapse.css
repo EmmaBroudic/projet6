@@ -5,6 +5,20 @@
     align-items: center;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FF6060;
+    width: 1023px;
+    height: 47px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
 .titre-collapse {
     position: relative;
     font-family: MontserratLight;
@@ -22,18 +36,8 @@
     cursor: pointer;
 }
 
-.button-container {
-    background-color: #FF6060;
-    width: 1023px;
-    height: 47px;
-    border-radius: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-}
-
-p {
+.texte-collapse {
+    display: none;
     font-family: MontserratLight;
     font-size: 14pt;
     color: #FF6060;
