@@ -35,13 +35,14 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+    width: 100%;
   }
   
   .img-top {
     position: relative;
     filter: brightness(70%);
     object-fit: cover;
-    width: 340px;
+    width: 85%;
     height: 120px;
     border-radius: 10px;
     z-index: 0;
@@ -51,11 +52,12 @@
     position: absolute;
     text-align: left;
     font-family: 'Montserrat';
-    font-size: 30px;
+    font-size: 25px;
     color: #FFFFFF;
     width: 340px;
     height: 120px;
     padding-top: 40px;
+    padding-left: 20px;
     z-index: 1;
   }
 }

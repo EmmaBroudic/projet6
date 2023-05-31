@@ -1,7 +1,19 @@
-.main {
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .main {
     background-color: #F6F6F6;
     border-radius: 20px 20px 20px 20px;
-    width: 1240px;
+    width: 95%;
     height: auto;
     margin-bottom: 30px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    width: 95%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
