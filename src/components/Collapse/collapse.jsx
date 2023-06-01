@@ -20,6 +20,7 @@ function Collapse() {
   };
 
   return (
+    
     <div className = "collapse-container">
       {infosState.map((info) => (
         <div key = {info.id}>
