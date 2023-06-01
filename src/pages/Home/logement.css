@@ -8,29 +8,65 @@
     display: none;
 }
 
-.bloc-top {
+.bloc-top, .bloc-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.bloc-top-titre, .bloc-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 50px;
+}
+
+.bloc-top-host, .bloc-equipement {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-right: 50px;
 }
 
 .titre-logement-un {
     position: relative;
-    font-family: MontserratLight;
-    color: black;
-    font-size: 14pt;
+    font-family: Montserrat;
+    color: #FF6060;
+    font-size: 25pt;
+    margin-bottom: 8px;
 }
 
 .localisation {
     position: relative;
-    font-family: MontserratLight;
-    color: black;
+    font-family: Montserrat;
+    color: #FF6060;
     font-size: 12pt;
+    margin-bottom: 20px;
+}
+
+.tags {
+    width: 115px;
+    height: 25px;
 }
 
 .tag {
     position: relative;
-    font-family: MontserratLight;
-    color: #FF6060;
-    font-size: 14pt;
+    font-family: Montserrat;
+    color: white;
+    background-color: #FF6060;
+    border-radius: 10px;
+    font-size: 10pt;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+}
+
+.host, .rating {
+    position: relative;
+    font-family: Montserrat;
+    color:  #FF6060;
 }
 
 .bloc-titre {
@@ -38,7 +74,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #FF6060;
-    width: 335px;
+    width: 500px;
     height: 47px;
     border-radius: 5px;
     padding-left: 20px;
@@ -59,8 +95,8 @@
     font-size: 14pt;
     color: #FF6060;
     background-color: #F7F7F7;
-    width: 335px;
-    height: auto;
+    width: 500px;
+    height: 120px;
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
