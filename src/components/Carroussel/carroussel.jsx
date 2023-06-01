@@ -5,17 +5,14 @@ import './carroussel.css';
 function Logement() {
     const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
   
-    const images = annonces.find(appartement => appartement.id === id);
+    const logement = annonces.find(appartement => appartement.id === id);
 
-    const { pictures } = images;
     // Utilisez l'identifiant pour récupérer les détails de l'appartement correspondant
     // et affichez-les dans votre composant
   
     return (
       <div className = "carroussel">
-        <div className="images-galerie">
-            {images.pictures.map((picture, index) => (<img key={index} src={picture} alt={`Image ${index + 1}`} />))}
-        </div>
+        {logement.pictures.map((picture, title, index) => (<img className="images-galerie" key={id} src={picture} alt={`${title + index + 1}`} />))}       
       </div>
     );
   }

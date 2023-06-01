@@ -1,0 +1,14 @@
+.carroussel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.images-galerie {
+    width: 1200px;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
+}
