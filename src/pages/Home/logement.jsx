@@ -1,5 +1,6 @@
 import { annonces } from '../../data/annonces/annonces.jsx';
 import { useParams } from 'react-router-dom';
+import Carroussel from '../../components/Carroussel/carroussel.jsx';
 import './logement.css';
 import '../../index.css';
 
@@ -14,6 +15,7 @@ function Logement() {
   
     return (
       <div className = "app-container">
+        <Carroussel />
         <div className = "bloc-carroussel">
             <h1>Détails de l'appartement {id}</h1>
             {/* Affichez les détails de l'appartement ici */}

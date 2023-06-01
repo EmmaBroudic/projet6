@@ -57,7 +57,7 @@ export const annonces = [
             "Télévision"
         ],
         "tags": [
-            "Canal Saint Martin",
+            "Canal Saint-Martin",
             "République",
             "Appartement"
         ]
