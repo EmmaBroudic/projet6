@@ -4,7 +4,7 @@ import './image-deux-top.css';
 function ImageDeuxTop() {
     return (
         <div>
-            <img src={img2} className="img-deux-top" alt="img" />
+            <img src = {img2} className = "img-deux-top" alt = "img" />
         </div>
     )
 }

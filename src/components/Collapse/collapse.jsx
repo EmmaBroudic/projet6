@@ -20,23 +20,23 @@ function Collapse() {
   };
 
   return (
-    <div className="collapse-container">
+    <div className = "collapse-container">
       {infosState.map((info) => (
-        <div key={info.id}>
-          <div className="button-container">
-            <h2 className="titre-collapse">{info.title}</h2>
+        <div key = {info.id}>
+          <div className = "button-container">
+            <h2 className = "titre-collapse">{info.title}</h2>
             {info.visible ? (
-              <button className="buttonup" onClick={() => toggleVisibility(info.id)}>
-                <img src={flechhaut} alt="flèche vers le haut" />
+              <button className = "buttonup" onClick = {() => toggleVisibility(info.id)}>
+                <img src={flechhaut} alt = "flèche vers le haut" />
               </button>
             ) : (
-              <button className="buttondown" onClick={() => toggleVisibility(info.id)}>
-                <img src={flechbas} alt="flèche vers le bas" />
+              <button className = "buttondown" onClick={() => toggleVisibility(info.id)}>
+                <img src = {flechbas} alt = "flèche vers le bas" />
               </button>
 
             )}
           </div>
-          {info.visible && (<p className="texte-collapse" style={{ display: 'block' }}>{info.text}</p>)}
+          {info.visible && (<p className = "texte-collapse" style = {{ display: 'block' }}>{info.text}</p>)}
         </div>
       ))}
     </div>

@@ -1,23 +1,19 @@
+import { Link } from 'react-router-dom';
 import { annonces } from '../../data/annonces/annonces.jsx';
 import './card.css';
  
 
 function Appartements() {
 
-	const categories = annonces.reduce(
-		(acc, appartement) =>
-			acc.includes(appartement.category) ? acc : acc.concat(appartement.category),
-		[]
-	)
 
 	return (
-		<div className="card-container">
-			{categories.map((cat) => (
-				<span key={cat}>{cat}</span>
-			))}
-
+		<div className = "card-container">
 			{annonces.map((appartement) => (
-				<figure className="card" key={appartement.id}><h2>{appartement.title}</h2></figure>
+				<Link className = "card" to={`/logement/${appartement.id}`}>
+					<figure key={appartement.id} >
+						<h2>{appartement.title}</h2>
+					</figure>
+				</Link>
 			))}
 		</div>
 	)

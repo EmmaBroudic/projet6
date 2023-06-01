@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/home.jsx';
 import APropos from './pages/Home/a-propos.jsx';
+import Logement from './pages/Home/logement.jsx';
 import Error from './components/Error/error.jsx';
 import Header from './components/Header/header.jsx';
 import Footer from './components/Footer/footer.jsx';
@@ -14,9 +15,10 @@ ReactDOM.render(
       <Router>
         <Header />
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/a-propos" element={<APropos />} />
-              <Route path="*" element={<Error />} />
+              <Route path = "/" element = {<Home />} />
+              <Route path = "/a-propos" element = {<APropos />} />
+              <Route path = "/logement/:id" element = {<Logement />} />
+              <Route path = "*" element = {<Error />} />
             </Routes>
         <Footer />
       </Router>
