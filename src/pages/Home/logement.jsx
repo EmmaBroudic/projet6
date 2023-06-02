@@ -7,13 +7,13 @@ import '../../index.css';
 function Logement() {
 
     const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
-
+    console.log( {id} );
     const logement = annonces.find(appartement => appartement.id === id);
 
     const { title, description, location, equipments, tags } = logement;
     // Utilisez l'identifiant pour récupérer les détails de l'appartement correspondant
     // et affichez-les dans votre composant
-  
+
     return (
       <div className = "app-container">
         <Carroussel />
@@ -26,7 +26,7 @@ function Logement() {
             <div className = "bloc-top-titre">
                 <div className = "titre-logement-un">{title}</div>
                 <div className = "localisation">{location}</div>
-                <div className = "tags" >{tags.map((tag, index) => (<span className = "tag" key={index}>{tag}</span>))}</div>
+                <div className = "tags" >{tags.map((tag, index) => (<span className = "tag" key={`${index}-${tag}`}>{tag}</span>))}</div>
             </div>
             <div className = "bloc-top-host">
                 <div className = "host">Nom personne</div>
@@ -47,6 +47,7 @@ function Logement() {
                 <div className = "texte-logement">{equipments}</div>
             </div>
         </div>
+
       </div>
     );
   }

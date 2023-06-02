@@ -9,14 +9,14 @@ function Appartements() {
 	return (
 		<div className = "card-container">
 
-			{annonces.map((appartement) => (
-				<Link className = "card" to = {`/logement/${appartement.id}`}>
-					<figure key={appartement.id} >
+			{annonces.map((appartement, index) => (
+				<Link className = "card" key = {`${index}-${appartement.title}`} to = {`/logement/${appartement.id}`}>
+					<figure key = {`${index}-${appartement.id}`}>
 						<h2>{appartement.title}</h2>
 					</figure>
 				</Link>
 			))}
-			
+
 		</div>
 	)
 }

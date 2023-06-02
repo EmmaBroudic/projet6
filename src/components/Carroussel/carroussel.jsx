@@ -2,7 +2,7 @@ import { annonces } from '../../data/annonces/annonces.jsx';
 import { useParams } from 'react-router-dom';
 import './carroussel.css';
 
-function Logement() {
+function Carroussel() {
     const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
   
     const logement = annonces.find(appartement => appartement.id === id);
@@ -17,4 +17,4 @@ function Logement() {
     );
   }
 
-export default Logement
+export default Carroussel
