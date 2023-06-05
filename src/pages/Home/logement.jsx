@@ -12,11 +12,11 @@ function Logement() {
 
     const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
 
-    const logement = annonces.find(appartement => appartement.id === id);
+    annonces.find(appartement => appartement.id === id);
 
-    const { title } = logement;
+    /*const { title } = logement;*/
 
-    console.log( title);
+    /*console.log( title);*/
 
     /*const nom = host.name;
 
