@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { createRoot } from 'react-dom';
 import { BrowserRouter as Router, Routes, Route, Navigate, useParams } from 'react-router-dom';
+import { annonces } from './data/annonces/annonces.jsx';
 import Home from './pages/Home/home.jsx';
 import APropos from './pages/Home/a-propos.jsx';
 import Logement from './pages/Home/logement.jsx';
@@ -14,8 +15,9 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 
 function App() {
-  
-  const [underConst, setUnderConst] = useState({Logement: false});
+  const [redirect, setUnderConst] = useState({ Logement: false });
+
+  console.log(setUnderConst);
 
   return (
     <React.StrictMode>
@@ -24,7 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/a-propos" element={<APropos />} />
-          <Route path="/logement/:id" element={<LogementWithRedirect underConst={underConst} />} />
+          <Route path="/logement/:id" element={<LogementWithRedirect redirect={redirect} />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
@@ -33,11 +35,11 @@ function App() {
   );
 }
 
-function LogementWithRedirect({ underConst }) {
-  
+function LogementWithRedirect() {
+
   const { id } = useParams();
 
-  if (id !== id) {
+  if (!annonces.find((annonce) => annonce.id === id)) {
     return <Navigate to="/error" />;
   }
 
