@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { createRoot } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route, Navigate, useParams } from 'react-router-dom';
 import { annonces } from './data/annonces/annonces.jsx';
 import Home from './pages/Home/home.jsx';
