@@ -1,0 +1,35 @@
+.titre-logement-un {
+    position: relative;
+    font-family: Montserrat;
+    color: #FF6060;
+    font-size: 25pt;
+    margin-bottom: 8px;
+}
+
+.localisation {
+    position: relative;
+    font-family: Montserrat;
+    color: #FF6060;
+    font-size: 12pt;
+    margin-bottom: 20px;
+}
+
+.tags {
+    min-width: 115px;
+    height: 25px;
+}
+
+
+
+.tag {
+    position: relative;
+    font-family: Montserrat;
+    color: white;
+    background-color: #FF6060;
+    border-radius: 10px;
+    font-size: 10pt;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+}

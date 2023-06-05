@@ -1,0 +1,19 @@
+.bloc-top-host {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-right: 50px;
+}
+
+.img-host {
+    width: 75px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.host, .rating {
+    position: relative;
+    font-family: Montserrat;
+    color:  #FF6060;
+}
