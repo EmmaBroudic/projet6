@@ -34,7 +34,6 @@ function Collapse() {
               <button className = "buttondown" onClick={() => toggleVisibility(info.id)}>
                 <img src = {flechbas} alt = "flèche vers le bas" />
               </button>
-
             )}
           </div>
           {info.visible && (<p className = "texte-collapse" style = {{ display: 'block' }}>{info.text}</p>)}
