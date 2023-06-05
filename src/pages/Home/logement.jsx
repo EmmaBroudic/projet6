@@ -12,20 +12,7 @@ function Logement() {
 
     const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
 
-    annonces.find(appartement => appartement.id === id);
-
-    /*const { title } = logement;*/
-
-    /*console.log( title);*/
-
-    /*const nom = host.name;
-
-    const photoIdentite = host.picture;*/
-    
-    // Utilisez l'identifiant pour récupérer les détails de l'appartement correspondant
-    // et affichez-les dans votre composant
-    /*const [descriptionVisible, setDescriptionVisible] = useState(false);*/
-   
+    annonces.find(appartement => appartement.id === id);   
 
     return (
       <div className = "app-container">
