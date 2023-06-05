@@ -7,7 +7,7 @@ import '../../index.css';
 function Logement() {
 
     const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
-    console.log( {id} );
+
     const logement = annonces.find(appartement => appartement.id === id);
 
     const { title, description, location, equipments, tags } = logement;
