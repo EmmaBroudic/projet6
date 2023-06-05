@@ -4,10 +4,6 @@
     flex-direction: column;
 }
 
-.bloc-carroussel {
-    display: none;
-}
-
 .bloc-top, .bloc-bottom {
     width: 100%;
     display: flex;
@@ -27,6 +23,13 @@
     flex-direction: column;
     justify-content: right;
     margin-right: 50px;
+}
+
+.img-host {
+    width: 75px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50px;
 }
 
 .titre-logement-un {

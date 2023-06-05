@@ -11,9 +11,12 @@ function Logement() {
 
     const logement = annonces.find(appartement => appartement.id === id);
 
-    const { title, description, location, equipments, tags } = logement;
+    const { title, description, host, location, equipments, tags } = logement;
+
+    const nom = host.name;
+
+    const photoIdentite = host.picture;
     
-console.log({equipments});
     // Utilisez l'identifiant pour récupérer les détails de l'appartement correspondant
     // et affichez-les dans votre composant
     const [descriptionVisible, setDescriptionVisible] = useState(false);
@@ -30,11 +33,6 @@ console.log({equipments});
     return (
       <div className = "app-container">
         <Carroussel />
-        <div className = "bloc-carroussel">
-            <h1>Détails de l'appartement {id}</h1>
-            {/* Affichez les détails de l'appartement ici */}
-            <div>ajouter composant Carroussel</div>
-        </div>
         <div className = "bloc-top">
             <div className = "bloc-top-titre">
                 <div className = "titre-logement-un">{title}</div>
@@ -42,7 +40,8 @@ console.log({equipments});
                 <div className = "tags" >{tags.map((tag, index) => (<span className = "tag" key={`${index}-${tag}`}>{tag}</span>))}</div>
             </div>
             <div className = "bloc-top-host">
-                <div className = "host">Nom personne</div>
+                <div className = "host">{ nom }</div>
+                <img src = { photoIdentite } className = "img-host" alt = "img-host" />
                 <div className = "rating">***</div>
             </div>
         </div>
