@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { annonces } from '../../data/annonces/annonces.jsx';
 import { useParams } from 'react-router-dom';
+import next from '../../images/next.png';
+import previus from '../../images/previus.png';
+import './carroussel.css';
 
 function Carroussel() {
   const { id } = useParams();
@@ -19,22 +22,22 @@ function Carroussel() {
 
   return (
     <div className="carroussel">
-      <div className="slides-container">
+      <div>
         {logement.pictures.map((picture, index) => (
           <img
             className="slide"
             key={`${index}-${id}+"b"`}
             src={picture}
-            style={{ display: index === currentSlide ? 'block' : 'none' }}
+            style={{ display: index === currentSlide ? 'flex' : 'none' }}
             alt={`Slide ${index + 1}`}
           />
         ))}
       </div>
       <button className="prev-button" onClick={prevSlide}>
-        Previous
+        <img src={previus} alt = "flèche vers le haut" />
       </button>
       <button className="next-button" onClick={nextSlide}>
-        Next
+        <img src={next} alt = "flèche vers le haut" />
       </button>
     </div>
   );
