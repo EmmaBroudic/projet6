@@ -15,9 +15,7 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 
 function App() {
-  const [redirect, setUnderConst] = useState({ Logement: false });
-
-  console.log(setUnderConst);
+  const redirect = useState({ Logement: false });
 
   return (
     <React.StrictMode>
