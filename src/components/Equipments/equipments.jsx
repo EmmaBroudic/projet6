@@ -1,6 +1,8 @@
 import { annonces } from '../../data/annonces/annonces.jsx';
 import { useParams } from 'react-router-dom';
 import React, { useState } from 'react';
+import flechhaut from '../../images/fleche-haut.png';
+import flechbas from '../../images/fleche-bas.png';
 import './equipments.css';
 import '../../index.css';
 
@@ -22,9 +24,19 @@ function Logement() {
     <div className="bloc-equipement">
         <div className="bloc-titre">
             <h2 className="titre-logement">Equipement</h2>
-            <button className="toggle-button" onClick={toggleEquipments}>
+            {/* <button className="toggle-button" onClick={toggleEquipments}>
             {equipmentsVisible ? 'Fermer' : 'Ouvrir'}
-            </button>
+            </button>*/}
+            {equipmentsVisible ? (
+              <button className = "buttonup" onClick = {() => toggleEquipments(equipmentsVisible)}>
+                <img src={flechhaut} alt = "flèche vers le haut" />
+              </button>
+            ) : (
+              <button className = "buttondown" onClick={() => toggleEquipments(equipmentsVisible)}>
+                <img src = {flechbas} alt = "flèche vers le bas" />
+              </button>
+            )}
+            
         </div>
         {equipmentsVisible && <div className = "texte-logement">
                 {equipments.map((equipment, index) => (
