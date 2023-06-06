@@ -1,14 +1,8 @@
-.logement {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-}
-
 .bloc-top {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1250px;
 }
 
 .bloc-bottom {
@@ -16,12 +10,5 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.bloc-top-titre {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin-left: 50px;
 }
 

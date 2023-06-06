@@ -12,9 +12,6 @@ function Description() {
 
     const logement = annonces.find(appartement => appartement.id === id);
 
-    console.log(logement);
-    console.log("Poppie");
-
     const { description } = logement;
 
     const [descriptionVisible, setDescriptionVisible] = useState(false);

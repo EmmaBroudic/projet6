@@ -36,12 +36,12 @@ function Test() {
 
   // Générer un tableau avec des éléments d'FontAwesome répétés
   const repeatedIconsRed = Array.from({ length: repeatCountRed }, (_, index) => (
-    <FontAwesomeIcon key={index} icon={faStar} />
+    <FontAwesomeIcon className = "pad" key={index} icon={faStar} />
   ));
 
   // Générer un tableau avec des éléments d'FontAwesome répétés
   const repeatedIconsGrey = Array.from({ length: repeatCountGrey }, (_, index) => (
-    <FontAwesomeIcon key={index} icon={faStar} />
+    <FontAwesomeIcon className = "pad" key={index} icon={faStar} />
   ));
 
   return (

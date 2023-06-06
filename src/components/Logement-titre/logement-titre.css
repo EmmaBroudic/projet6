@@ -1,3 +1,10 @@
+.bloc-top-titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 50px;
+}
+
 .titre-logement-un {
     position: relative;
     font-family: Montserrat;

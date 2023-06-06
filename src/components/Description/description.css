@@ -32,7 +32,8 @@
     color: #FF6060;
     background-color: #F7F7F7;
     width: 500px;
-    height: 120px;
+    min-height: 160px;
+    height: auto;
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;

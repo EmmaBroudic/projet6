@@ -1,7 +1,13 @@
 .red {
+    font-size: 20px;
     color: #FF6060;
 }
 
 .grey {
+    font-size: 20px;
     color: #F6F6F6;
+}
+
+.pad {
+    padding: 5px;
 }
