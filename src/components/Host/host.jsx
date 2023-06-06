@@ -20,7 +20,7 @@ function Host() {
     return (
         <div className = "bloc-top-host">
             <div className = "host">
-                <p className = "nom-host">{ nom }</p>
+                <div className = "nom"><p>{ nom }</p></div>
                 <img src = { photoIdentite } className = "img-host" alt = "img-host" />
             </div>
             <div className = "rating"><Rating /></div>
