@@ -12,7 +12,7 @@
     border-radius: 50px;
 }
 
-.host, .rating {
+.host {
     position: relative;
     font-family: Montserrat;
     color:  #FF6060;
