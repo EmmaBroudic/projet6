@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: column;
         justify-content: right;
-        margin-right: 50px;
+        width: 95%;
     }
     
     .host {
@@ -36,15 +36,13 @@
         margin-top: 20px;
     }
 }
+
 @media screen and (max-width: 767px) {
     .bloc-top-host {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         width: 95%;
-        margin-top: 30px;
-        margin-left: 50px;
-        margin-right: 50px;
     }
     
     .host {

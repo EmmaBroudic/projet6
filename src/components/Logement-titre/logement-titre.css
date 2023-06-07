@@ -1,9 +1,10 @@
-@media screen and (min-width: 768px) and (max-width: 1400px) {
+@media screen and (min-width: 1205px) and (max-width: 1400px) {
     .bloc-top-titre {
         display: flex;
         flex-direction: column;
         justify-content: left;
         margin-left: 50px;
+        width: 95%;
     }
     
     .titre-logement-un {
@@ -12,6 +13,97 @@
         color: #FF6060;
         font-size: 25pt;
         margin-bottom: 8px;
+        max-width: 1200px;
+    }
+    
+    .localisation {
+        position: relative;
+        font-family: Montserrat;
+        color: #FF6060;
+        font-size: 12pt;
+        margin-bottom: 20px;
+    }
+    
+    .tags {
+        min-width: 115px;
+        height: 25px;
+    }
+    
+    .tag {
+        position: relative;
+        font-family: Montserrat;
+        color: white;
+        background-color: #FF6060;
+        border-radius: 10px;
+        font-size: 10pt;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1204px) {
+    .bloc-top-titre {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 50px;
+        width: 95%;
+    }
+    
+    .titre-logement-un {
+        position: relative;
+        font-family: Montserrat;
+        color: #FF6060;
+        font-size: 25pt;
+        margin-bottom: 8px;
+        max-width: 900px;
+    }
+    
+    .localisation {
+        position: relative;
+        font-family: Montserrat;
+        color: #FF6060;
+        font-size: 12pt;
+        margin-bottom: 20px;
+    }
+    
+    .tags {
+        min-width: 115px;
+        height: 25px;
+    }
+    
+    .tag {
+        position: relative;
+        font-family: Montserrat;
+        color: white;
+        background-color: #FF6060;
+        border-radius: 10px;
+        font-size: 10pt;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .bloc-top-titre {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 50px;
+        width: 95%;
+    }
+    
+    .titre-logement-un {
+        position: relative;
+        font-family: Montserrat;
+        color: #FF6060;
+        font-size: 25pt;
+        margin-bottom: 8px;
+        max-width: 750px;
     }
     
     .localisation {
@@ -46,7 +138,7 @@
         display: flex;
         flex-direction: column;
         justify-content: left;
-        margin-left: 50px;
+        width: 95%;
     }
     
     .titre-logement-un {
@@ -55,6 +147,7 @@
         color: #FF6060;
         font-size: 16pt;
         margin-bottom: 8px;
+        max-width: 355px;
     }
     
     .localisation {

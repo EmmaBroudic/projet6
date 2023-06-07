@@ -16,7 +16,9 @@ function Logement() {
 
     return (
       <div className = "logement">
-        <Carroussel />
+        <div className = "carroussel">
+            <Carroussel />
+        </div>
         <div className = "bloc-top">
             <Titre />
             <Host />            

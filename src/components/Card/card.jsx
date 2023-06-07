@@ -5,18 +5,20 @@ import './card.css';
 
 function Appartements() {
 
-
 	return (
-		<div className = "card-container">
-
-			{annonces.map((appartement, index) => (
-				<Link className = "card" key = {`${index}-${appartement.title}`} to = {`/logement/${appartement.id}`}>
-					<figure key = {`${index}-${appartement.id}`}>
-						<h2>{appartement.title}</h2>
-					</figure>
-				</Link>
-			))}
-
+		<div className="card">
+				{annonces.map((appartement, index) => (
+					<Link key = {`${index}-${appartement.title}`} to = {`/logement/${appartement.id}`}>
+						<div key={`${index}-${appartement.id}`} className="card-item">
+							<h2>{appartement.title}</h2>
+							<img
+							className="img-card"
+							src={appartement.cover}
+							alt="img-appart"
+							/>
+						</div>
+					</Link>
+				))}
 		</div>
 	)
 }
@@ -26,3 +28,6 @@ console.log(annonces);
 
 
 export default Appartements
+
+/* */
+

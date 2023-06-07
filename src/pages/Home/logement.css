@@ -3,7 +3,8 @@
         margin: 30px;
         display: flex;
         flex-direction: column;
-        align-items: center;         
+        align-items: center;
+        width: 95%;      
     }
 
     .bloc-top {
@@ -26,7 +27,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;         
+        align-items: center;
+        width: 95%;         
     }
 
     .bloc-top {
@@ -45,6 +47,8 @@
         padding: 20px;
     }
 }
+
+
 
 
 
