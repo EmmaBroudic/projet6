@@ -15,7 +15,7 @@ function Logement() {
     annonces.find(appartement => appartement.id === id);   
 
     return (
-      <div className = "app-container">
+      <div className = "logement">
         <Carroussel />
         <div className = "bloc-top">
             <Titre />

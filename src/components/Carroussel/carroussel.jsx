@@ -34,10 +34,10 @@ function Carroussel() {
         ))}
       </div>
       <button className="prev-button" onClick={prevSlide}>
-        <img src={previus} alt = "flèche vers le haut" />
+        <img className = "prev" src={previus} alt = "flèche vers le haut" />
       </button>
       <button className="next-button" onClick={nextSlide}>
-        <img src={next} alt = "flèche vers le haut" />
+        <img className = "next" src={next} alt = "flèche vers le haut" />
       </button>
     </div>
   );

@@ -1,13 +1,30 @@
-.red {
-    font-size: 20px;
-    color: #FF6060;
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+    .red {
+        font-size: 20px;
+        color: #FF6060;
+    }
+    
+    .grey {
+        font-size: 20px;
+        color: #F6F6F6;
+    }
+    
+    .pad {
+        padding: 5px;
+    }
 }
-
-.grey {
-    font-size: 20px;
-    color: #F6F6F6;
-}
-
-.pad {
-    padding: 5px;
+@media screen and (max-width: 767px) {
+    .red {
+        font-size: 16px;
+        color: #FF6060;
+    }
+    
+    .grey {
+        font-size: 16px;
+        color: #F6F6F6;
+    }
+    
+    .pad {
+        padding: 3px;
+    }
 }

@@ -13,7 +13,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './rating.css';
 
-function Test() {
+function Rating() {
   library.add(faStar);
 
   const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
@@ -52,29 +52,4 @@ function Test() {
   );
 }
 
-export default Test;/*
-
-
-
-function Rating() {
-  const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
-
-  annonces.find(appartement => appartement.id === id);
-
-  /*const { rating } = logement;*/
-
-  /*const nbreEtoilesRouges = rating;
-  const nbreEtoilesGrises = 5 - rating;*/
-  /*const star = {<FontAwesomeIcon icon={solid("star")} />};
-  const repeatString = "r".repeat(4);
-  const repeatStringBis = star.repeat(4);
-
-    return (
-        <div className="rating">
-
-            <p>{ repeatString }</p>
-            <p>{ repeatStringBis }</p>
-        </div>
-    )
-}
-export default Rating;*/
+export default Rating;
