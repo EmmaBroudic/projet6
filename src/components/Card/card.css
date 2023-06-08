@@ -9,6 +9,8 @@
   
   .card-item {
     position: relative;
+    background: linear-gradient(1deg, #704d4d, #FF6060);
+    border-radius: 10px;
     margin: 20px;
     width: 300px;
     height: 300px;

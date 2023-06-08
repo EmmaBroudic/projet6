@@ -1,5 +1,6 @@
 import Imagetop from '../../components/Image-top/image-top.jsx';
 import Main from '../../components/Main/main.jsx';
+import Test from '../../components/TestReu/test-reu.jsx';
 import '../../index.css';
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
     <div className = "app-container">
       <Imagetop />
       <Main />
+      <Test />
     </div>
   );
 }
