@@ -11,7 +11,7 @@
         flex-direction: row;
         justify-content: space-between;
         background-color: #FF6060;
-        width: 920px;
+        width: auto;
         height: 47px;
         border-radius: 5px;
         padding-left: 20px;
@@ -43,7 +43,7 @@
         font-size: 14pt;
         color: #FF6060;
         background-color: #F7F7F7;
-        width: 920px;
+        width: auto;
         height: auto;
         border-radius: 5px;
         padding-left: 20px;
@@ -65,7 +65,7 @@
         flex-direction: row;
         justify-content: space-between;
         background-color: #FF6060;
-        width: 600px;
+        width: auto;
         height: 47px;
         border-radius: 5px;
         padding-left: 20px;
@@ -97,7 +97,7 @@
         font-size: 14pt;
         color: #FF6060;
         background-color: #F7F7F7;
-        width: 600px;
+        width: auto;
         height: auto;
         border-radius: 5px;
         padding-left: 20px;
@@ -119,7 +119,7 @@
         flex-direction: row;
         justify-content: space-between;
         background-color: #FF6060;
-        width: 335px;
+        width: auto;
         height: 47px;
         border-radius: 5px;
         padding-left: 20px;
@@ -151,7 +151,7 @@
         font-size: 14pt;
         color: #FF6060;
         background-color: #F7F7F7;
-        width: 335px;
+        width: auto;
         height: auto;
         border-radius: 5px;
         padding-left: 20px;

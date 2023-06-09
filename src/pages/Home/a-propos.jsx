@@ -1,5 +1,5 @@
 import ImageDeuxTop from '../../components/Image-deux-top/image-deux-top.jsx';
-import Collapse from '../../components/Collapse/collapse.jsx';
+import Informations from '../../components/Informations/informations.jsx';
 import '../../index.css';
 
 
@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className = "app-container">
       <ImageDeuxTop />
-      <Collapse />
+      <Informations />
     </div>
   );
 }
