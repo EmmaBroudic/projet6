@@ -1,6 +1,7 @@
 import React from 'react';
 import ReusableCollapse from '../ReusableCollapse/reu-collapse.jsx';
 import { infos } from '../../data/infos/infos.jsx';
+import './informations.css';
 
 function Infos() {
   // Extraire les données spécifiques (rating et description) de chaque annonce
@@ -11,8 +12,8 @@ function Infos() {
   }));
 
   return (
-    <div>
-      <ReusableCollapse className = "infos" data = { infosData } />
+    <div className = "infos" >
+      <ReusableCollapse data = { infosData } />
     </div>
   );
 }

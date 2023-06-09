@@ -1,50 +1,30 @@
-import { annonces } from '../../data/annonces/annonces.jsx';
+import React from 'react';
 import { useParams } from 'react-router-dom';
-import React, { useState } from 'react';
-import flechhaut from '../../images/fleche-haut.png';
-import flechbas from '../../images/fleche-bas.png';
+import { annonces } from '../../data/annonces/annonces.jsx';
+import ReusableCollapse from '../ReusableCollapse/reu-collapse.jsx';
 import './equipments.css';
-import '../../index.css';
 
-function Logement() {
+function Equipments() {
+  const { id } = useParams();
+  const logement = annonces.find(appartement => appartement.id === id);
 
-    const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
+  const annoncesData = logement
+    ? [
+        {
+          id: logement.id,
+          titre: "Equipement",
+          descriptif: logement.equipments.map((item, index) => (
+            <p className="texte-equipement" key={`${index}-${id}+"c"`}>{item}</p>
+          )),
+        },
+      ]
+    : [];
 
-    const logement = annonces.find(appartement => appartement.id === id);
-
-    const { equipments } = logement;
-
-    const [equipmentsVisible, setEquipmentsVisible] = useState(false);
-  
-    const toggleEquipments = () => {
-      setEquipmentsVisible(!equipmentsVisible);
-    };
-
-    return (
-    <div className="bloc-equipement">
-        <div className="bloc-titre">
-            <h2 className="titre-logement">Equipement</h2>
-            {/* <button className="toggle-button" onClick={toggleEquipments}>
-            {equipmentsVisible ? 'Fermer' : 'Ouvrir'}
-            </button>*/}
-            {equipmentsVisible ? (
-              <button className = "buttonup" onClick = {() => toggleEquipments(equipmentsVisible)}>
-                <img src={flechhaut} alt = "flèche vers le haut" />
-              </button>
-            ) : (
-              <button className = "buttondown" onClick={() => toggleEquipments(equipmentsVisible)}>
-                <img src = {flechbas} alt = "flèche vers le bas" />
-              </button>
-            )}
-            
-        </div>
-        {equipmentsVisible && <div className = "texte-logement">
-                {equipments.map((equipment, index) => (
-                    <p className="texte-equipement" key={index}>{equipment}</p>
-                ))}
-            </div>}
+  return (
+    <div>
+      <ReusableCollapse data={annoncesData} />
     </div>
-    );
-  }
+  );
+}
 
-export default Logement
+export default Equipments;

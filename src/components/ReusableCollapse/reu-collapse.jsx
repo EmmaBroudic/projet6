@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import flechhaut from '../../images/fleche-haut.png';
 import flechbas from '../../images/fleche-bas.png';
-import './collapse.css';
+import './reu-collapse.css';
 
 function ReusableCollapse({ data }) {
   const [infosState, setInfosState] = useState(data);
@@ -33,7 +33,7 @@ function ReusableCollapse({ data }) {
               </button>
             )}
           </div>
-          {info.visible && <p className="texte-collapse" style={{ display: 'block' }}>{info.descriptif}</p>}
+          {info.visible && <div className="texte-collapse" style={{ display: 'block' }}>{info.descriptif}</div>}
         </div>
       ))}
     </div>

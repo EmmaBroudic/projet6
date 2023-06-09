@@ -1,42 +1,27 @@
-import { annonces } from '../../data/annonces/annonces.jsx';
+import React from 'react';
 import { useParams } from 'react-router-dom';
-import React, { useState } from 'react';
-import flechhaut from '../../images/fleche-haut.png';
-import flechbas from '../../images/fleche-bas.png';
+import { annonces } from '../../data/annonces/annonces.jsx';
+import ReusableCollapse from '../ReusableCollapse/reu-collapse.jsx';
 import './description.css';
-import '../../index.css';
 
 function Description() {
 
-    const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
+  const { id } = useParams();
 
-    const logement = annonces.find(appartement => appartement.id === id);
+  const logement = annonces.find(appartement => appartement.id === id);
 
-    const { description } = logement;
+  // Extraire les données spécifiques (rating et description) de chaque annonce
+  const annoncesData = logement ? [{
+    id: logement.id,
+    titre: "Description",
+    descriptif: logement.description,
+  }] : [];
 
-    const [descriptionVisible, setDescriptionVisible] = useState(false);
-  
-    const toggleDescription = () => {
-      setDescriptionVisible(!descriptionVisible);
-    };
-
-    return (
-    <div className="bloc-description">
-        <div className="bloc-titre">
-            <h2 className="titre-logement">Description</h2>
-            {descriptionVisible ? (
-              <button className = "buttonup" onClick = {() => toggleDescription(descriptionVisible)}>
-                <img src={flechhaut} alt = "flèche vers le haut" />
-              </button>
-            ) : (
-              <button className = "buttondown" onClick={() => toggleDescription(descriptionVisible)}>
-                <img src = {flechbas} alt = "flèche vers le bas" />
-              </button>
-            )}
-        </div>
-        {descriptionVisible && <div className="texte-logement">{description}</div>}
+  return (
+    <div>
+      <ReusableCollapse data = { annoncesData } />
     </div>
-    );
-  }
+  );
+}
 
-export default Description
+export default Description;

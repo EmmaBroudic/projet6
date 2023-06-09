@@ -1,17 +1,17 @@
 @media screen and (min-width: 992px) and (max-width: 1400px) {
 
     .infos {
-    width: 920px;
+    width: 920px !important;
     }}
 
     @media screen and (min-width: 768px) and (max-width: 991px) {
     
     .infos {
-    width: 600px;
+    width: 600px !important;
     }}
     
     @media screen and (max-width: 767px) {
     
     .infos {
-    width: 335px;
+    width: 335px !important;
     }}

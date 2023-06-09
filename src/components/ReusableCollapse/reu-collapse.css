@@ -1,0 +1,53 @@
+.collapse-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FF6060;
+    width: 100%;
+    height: 47px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.titre-collapse {
+    position: relative;
+    font-family: MontserratLight;
+    color: white;
+    font-size: 14pt;
+}
+
+.buttonup, .buttondown {
+    text-decoration: none;
+    border: 0px;
+    background-color: #FF6060;
+    color: white;
+    font-family: MontserratBold;
+    font-size: 25pt;
+    cursor: pointer;
+}
+
+.texte-collapse {
+    display: none;
+    font-family: MontserratLight;
+    font-size: 14pt;
+    color: #FF6060;
+    background-color: #F7F7F7;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
