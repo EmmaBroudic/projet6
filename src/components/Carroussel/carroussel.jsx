@@ -39,6 +39,7 @@ function Carroussel() {
       <button className="next-button" onClick={nextSlide}>
         <img className = "next" src={next} alt = "flèche vers le haut" />
       </button>
+      <p className = "num">{currentSlide + 1}/{logement.pictures.length}</p>
     </div>
   );
 }
