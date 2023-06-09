@@ -1,17 +1,33 @@
-@media screen and (min-width: 992px) and (max-width: 1400px) {
+.infos-blocs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%; 
+}
 
-    .infos {
-    width: 920px !important;
-    }}
+.infos-titre {
+    position: relative;
+    font-family: MontserratLight;
+    color: white;
+    font-size: 14pt;
+    width: 920px; 
+}
 
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-    
-    .infos {
-    width: 600px !important;
-    }}
-    
-    @media screen and (max-width: 767px) {
-    
-    .infos {
-    width: 335px !important;
-    }}
+.text-container {
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    background-color: #F7F7F7;
+    width: 920px; 
+    height: auto;
+}
+
+.infos-text {
+    position: relative;
+    font-family: MontserratLight;
+    font-size: 14pt;
+    color: #FF6060;
+}
+

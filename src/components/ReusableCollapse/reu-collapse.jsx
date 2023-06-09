@@ -22,7 +22,7 @@ function ReusableCollapse({ data }) {
       {infosState.map((info) => (
         <div key={info.id}>
           <div className="button-container">
-            <h2 className="titre-collapse">{info.titre}</h2>
+            <div>{info.titre}</div>
             {info.visible ? (
               <button className="buttonup" onClick={() => toggleVisibility(info.id)}>
                 <img src={flechhaut} alt="flèche vers le haut" />
@@ -33,7 +33,11 @@ function ReusableCollapse({ data }) {
               </button>
             )}
           </div>
-          {info.visible && <div className="texte-collapse" style={{ display: 'block' }}>{info.descriptif}</div>}
+          {info.visible && (
+              <div style={{ display: info.visible ? 'block' : 'none' }}>
+                {info.descriptif}
+              </div>
+              )}
         </div>
       ))}
     </div>

@@ -20,13 +20,6 @@
     margin-top: 20px;
 }
 
-.titre-collapse {
-    position: relative;
-    font-family: MontserratLight;
-    color: white;
-    font-size: 14pt;
-}
-
 .buttonup, .buttondown {
     text-decoration: none;
     border: 0px;
@@ -37,17 +30,3 @@
     cursor: pointer;
 }
 
-.texte-collapse {
-    display: none;
-    font-family: MontserratLight;
-    font-size: 14pt;
-    color: #FF6060;
-    background-color: #F7F7F7;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-}
