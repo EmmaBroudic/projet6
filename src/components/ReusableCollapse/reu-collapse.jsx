@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import flechhaut from '../../images/fleche-haut.png';
 import flechbas from '../../images/fleche-bas.png';
 import './reu-collapse.css';
+import '../../index.css';
 
 function ReusableCollapse({ data }) {
   const [infosState, setInfosState] = useState(data);
@@ -18,12 +19,12 @@ function ReusableCollapse({ data }) {
   };
 
   return (
-    <div className="collapse-container">
+    <div>
       {infosState.map((info) => (
-        <div key={info.id}>
+        <div className="collapse-container" key={info.id}>
           <div className="button-container">
-            <div>{info.titre}</div>
-            {info.visible ? (
+              <div className = "title">{info.titre}</div>
+              {info.visible ? (
               <button className="buttonup" onClick={() => toggleVisibility(info.id)}>
                 <img src={flechhaut} alt="flèche vers le haut" />
               </button>
@@ -34,10 +35,10 @@ function ReusableCollapse({ data }) {
             )}
           </div>
           {info.visible && (
-              <div style={{ display: info.visible ? 'block' : 'none' }}>
-                {info.descriptif}
-              </div>
-              )}
+          <div className = "text-descript" style={{ display: info.visible ? 'block' : 'none' }}>
+            {info.descriptif}
+          </div>
+          )}
         </div>
       ))}
     </div>

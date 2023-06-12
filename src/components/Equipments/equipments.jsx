@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { annonces } from '../../data/annonces/annonces.jsx';
 import ReusableCollapse from '../ReusableCollapse/reu-collapse.jsx';
 import './equipments.css';
+import '../../index.css';
 
 function Equipments() {
   const { id } = useParams();

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { annonces } from '../../data/annonces/annonces.jsx';
 import './card.css';
+import '../../index.css';
  
 
 function Appartements() {

@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import next from '../../images/next.png';
 import previus from '../../images/previus.png';
 import './carroussel.css';
+import '../../index.css';
 
 function Carroussel() {
   const { id } = useParams();

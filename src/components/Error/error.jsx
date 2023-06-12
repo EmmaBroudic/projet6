@@ -1,4 +1,5 @@
 import './error.css';
+import '../../index.css';
 
 function Error() {
     return (

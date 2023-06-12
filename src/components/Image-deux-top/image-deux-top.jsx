@@ -1,5 +1,6 @@
 import img2 from '../../images/IMG2_slider.jpg';
 import './image-deux-top.css';
+import '../../index.css';
  
 function ImageDeuxTop() {
     return (

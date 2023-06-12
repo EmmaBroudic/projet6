@@ -1,5 +1,6 @@
 import logo from '../../images/logo-kasa-blanc.png';
 import './footer.css';
+import '../../index.css';
  
 function Footer() {
     return (
