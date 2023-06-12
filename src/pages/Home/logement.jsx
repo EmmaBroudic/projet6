@@ -4,7 +4,6 @@ import Carroussel from '../../components/Carroussel/carroussel.jsx';
 import Titre from '../../components/Logement-titre/logement-titre.jsx';
 import Host from '../../components/Host/host.jsx';
 import Description from '../../components/Description/description.jsx';
-import Equipment from '../../components/Equipments/equipments.jsx';
 import './logement.css';
 import '../../index.css';
 
@@ -25,9 +24,7 @@ function Logement() {
         </div>
         <div className="bloc-bottom">
             <Description />
-            <Equipment />
         </div>
-
       </div>
     );
   }

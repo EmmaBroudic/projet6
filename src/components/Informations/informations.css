@@ -8,7 +8,7 @@
 
     .infos-titre {
         width: 920px;
-        position: relative;
+        position: static;
         font-family: MontserratLight;
         color: white;
         font-size: 14pt;
@@ -34,7 +34,7 @@
 
     .infos-titre {
         width: 600px;
-        position: relative;
+        position: static;
         font-family: MontserratLight;
         color: white;
         font-size: 14pt;
@@ -60,7 +60,7 @@
 
     .infos-titre {
         width: 335px;
-        position: relative;
+        position: static;
         font-family: MontserratLight;
         color: white;
         font-size: 14pt;

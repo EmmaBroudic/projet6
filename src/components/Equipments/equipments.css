@@ -1,13 +1,14 @@
 @media screen and (min-width: 992px) and (max-width: 1400px) {
     .equi-bloc {
-        display: flex;
+        /*display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 450px; 
+        justify-content: center;*/
+        width: 450px;
+        margin: 30px;
     }
 
     .equi-titre {
-        position: relative;
+        position: static;
         font-family: MontserratLight;
         color: white;
         font-size: 14pt;

@@ -1,13 +1,20 @@
 @media screen and (min-width: 992px) and (max-width: 1400px) {
     .descri-bloc {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1200px;
+        margin: 30px;
+    }
+
+    .bloc-left, .bloc-right {
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 450px; 
+        width: 450px;
     }
 
     .descri-titre {
-        position: relative;
+        position: static;
         font-family: MontserratLight;
         color: white;
         font-size: 14pt;
@@ -15,6 +22,16 @@
     }
 
     .descri-text {
+        position: relative;
+        font-family: MontserratLight;
+        font-size: 14pt;
+        color: #FF6060;
+        width: 450px;
+    }
+
+    .equi-text {
+        display: flex;
+        flex-direction: column;
         position: relative;
         font-family: MontserratLight;
         font-size: 14pt;
@@ -47,6 +64,8 @@
         color: #FF6060;
         width: 300px;
     }
+
+
 }
 
 @media screen and (max-width: 767px) {

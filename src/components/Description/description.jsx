@@ -17,10 +17,21 @@ function Description() {
     descriptif: <p className = "descri-text">{logement.description}</p>,
   }] : [];
 
+  const annoncesDataDeux = logement ? [{
+    id: logement.id,
+    titre: <h2 className = "descri-titre">{"Equipement"}</h2>,
+    descriptif: logement.equipments.map((item, index) => (
+    <p className="equi-text" key={`${index}-${id}+"c"`}>{item}</p>
+    )),
+  }] : [];
+
 
   return (
     <div className = "descri-bloc">
-      <ReusableCollapse data = { annoncesData } />
+      <div className = "bloc-left"><ReusableCollapse data = { annoncesData } /></div>
+      <div className = "bloc-right"><ReusableCollapse data = { annoncesDataDeux } /></div>
+      
+      
     </div>
   );
 }
