@@ -5,6 +5,17 @@ import ReusableCollapse from '../ReusableCollapse/reu-collapse.jsx';
 import './description.css';
 import '../../index.css';
 
+/* Dans un premier temps, ce bloc de code sélectionne l'identifiant
+indiqué dans l'url afin de retrouver les données correpondant au
+logement sélectionné
+Ensuite, deux fonctions sont créées (annoncesData et annoncesDataDeux)
+pour récupérer les informations descriptions et équipements du logement
+en question.
+Enfin, ces données sont passées en tant que props dans
+le composant ReusableCollapse. Ainsi, il est possible d'afficher
+ou masquer le texte contenu dans les blocs comportant la className
+"descri-text" et "equi-text".*/
+
 function Description() {
 
   const { id } = useParams();
@@ -30,8 +41,6 @@ function Description() {
     <div className = "descri-bloc">
       <div className = "bloc-left"><ReusableCollapse data = { annoncesData } /></div>
       <div className = "bloc-right"><ReusableCollapse data = { annoncesDataDeux } /></div>
-      
-      
     </div>
   );
 }

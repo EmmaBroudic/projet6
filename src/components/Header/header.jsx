@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/logo-kasa.jpg';
 import './header.css';
 import '../../index.css';
+
+/*Ce bloc de code correspond au header du site web.
+Il est visible sur toutes les pages du site web. Y compris les
+pages d'erreur.*/
  
 function Header() {
     return (

@@ -2,6 +2,8 @@ import Imagetop from '../../components/Image-top/image-top.jsx';
 import Main from '../../components/Main/main.jsx';
 import '../../index.css';
 
+/* Ce bloc de code réunit les différents composants de la page home. */
+
 function Home() {
   return (
     <div className = "app-container">
@@ -12,18 +14,3 @@ function Home() {
 }
 
 export default Home;
-
-/*      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>*/

@@ -2,7 +2,12 @@ import { Link } from 'react-router-dom';
 import { annonces } from '../../data/annonces/annonces.jsx';
 import './card.css';
 import '../../index.css';
- 
+
+/* ce bloc de code fait un map sur les données du fichier annonce afin de
+récupérer les informations titre et image et de les reproduire le nombre
+de fois nécessaire. Par ailleurs, chaque card est cliquable et
+dirige l'utilisateur vers une page logement dédiée avec un url qui comprend
+l'identifiant du logement */
 
 function Appartements() {
 

@@ -11,6 +11,8 @@ import Footer from './components/Footer/footer.jsx';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
+/* Ce bloc de code contient toutes les routes du projet. */
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 

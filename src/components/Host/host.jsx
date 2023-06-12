@@ -4,9 +4,16 @@ import Rating from '../Rating/rating.jsx';
 import './host.css';
 import '../../index.css';
 
+/* Dans un premier temps, ce bloc de code sélectionne l'identifiant
+indiqué dans l'url afin de retrouver les données correpondant au
+logement sélectionné.
+Ensuite, il affiche les informations concernant le propriétaire du
+logement et affiche le composant Rating qui contient la note du
+logement.*/
+
 function Host() {
 
-    const { id } = useParams(); // Récupère l'identifiant de l'appartement depuis l'URL
+    const { id } = useParams();
 
     const logement = annonces.find(appartement => appartement.id === id);
 

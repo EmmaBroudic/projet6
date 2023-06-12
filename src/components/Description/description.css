@@ -1,15 +1,26 @@
+.equi-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: MontserratLight;
+    font-size: 14pt;
+    color: #FF6060;
+    width: 450px;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1400px) {
     .descri-bloc {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 1200px;
         margin: 30px;
+        width: 1200px;
     }
 
     .bloc-left, .bloc-right {
         display: flex;
         flex-direction: column;
+        padding: 20px;
         width: 450px;
     }
 
@@ -28,29 +39,20 @@
         color: #FF6060;
         width: 450px;
     }
-
-    .equi-text {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        font-family: MontserratLight;
-        font-size: 14pt;
-        color: #FF6060;
-        width: 450px;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
     .descri-bloc {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
-        width: 300px; 
+        width: 700px; 
+        margin: 30px;
     }
 
     .descri-titre {
-        position: relative;
+        position: static;
         font-family: MontserratLight;
         color: white;
         font-size: 14pt;
@@ -74,12 +76,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 30px;
         width: 335px; 
     }
 
     .descri-titre {
         width: 335px;
-        position: relative;
+        position: static;
         font-family: MontserratLight;
         color: white;
         font-size: 14pt;

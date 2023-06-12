@@ -6,6 +6,12 @@ import previus from '../../images/previus.png';
 import './carroussel.css';
 import '../../index.css';
 
+/* Dans un premier temps, ce bloc de code sélectionne l'identifiant
+indiqué dans l'url afin de retrouver les données correpondant au
+logement sélectionné
+Ensuite, une action .map est effectuée sur les images afin de les afficher
+dans un carroussel.*/
+
 function Carroussel() {
   const { id } = useParams();
 

@@ -1,4 +1,11 @@
 @media screen and (min-width: 768px) and (max-width: 1400px) {
+    .rating-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        width: 200px;
+    }
+
     .red {
         font-size: 20px;
         color: #FF6060;
@@ -14,6 +21,14 @@
     }
 }
 @media screen and (max-width: 767px) {
+
+    .rating-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: 200px;
+    }
+
     .red {
         font-size: 16px;
         color: #FF6060;

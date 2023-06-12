@@ -1,7 +1,10 @@
 import img1 from '../../images/IMG1_slider.jpg';
 import './image-top.css';
 import '../../index.css';
- 
+
+/* Ce bloc de code correspond à l'image affichée
+au-dessous du header sur la page home.*/
+
 function Imagetop() {
     return (
         <div className = "image-top">

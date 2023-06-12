@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -85,7 +85,7 @@
     
     .slide {
         position: relative;
-        width: 750px;
+        width: 700px;
         height: 277px;
         object-fit: cover;
         border-radius: 25px;

@@ -1,7 +1,11 @@
 import logo from '../../images/logo-kasa-blanc.png';
 import './footer.css';
 import '../../index.css';
- 
+
+/*Ce bloc de code correspond au footer du site web.
+Il est visible sur toutes les pages du site web. Y compris les
+pages d'erreur.*/
+
 function Footer() {
     return (
         <div className = "footer">

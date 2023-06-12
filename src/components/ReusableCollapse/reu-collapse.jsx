@@ -4,6 +4,11 @@ import flechbas from '../../images/fleche-bas.png';
 import './reu-collapse.css';
 import '../../index.css';
 
+/* Ce bloc de code permet d'afficher ou de masquer les éléments de textes
+présentés sous un élément de titre, et ce, à l'aide d'images flèches vers
+le haut ou flèches vers le bas.
+ */
+
 function ReusableCollapse({ data }) {
   const [infosState, setInfosState] = useState(data);
 

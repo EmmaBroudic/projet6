@@ -4,8 +4,17 @@ import { infos } from '../../data/infos/infos.jsx';
 import './informations.css';
 import '../../index.css';
 
+/* Dans un premier temps, ce bloc de code utilise les données informations présentes
+dans le fichier infos.jsx.
+Ensuite, ces données sont passées en tant que props dans
+le composant ReusableCollapse. Ainsi, il est possible d'afficher
+ou masquer le texte contenu dans le bloc comportant la className
+"infos-bloc".
+Ces éléments sont visibles dans la page A propos.
+ */
+
 function Infos() {
-  // Extraire les données spécifiques (rating et description) de chaque annonce
+  
   const infosData = infos.map((info) => ({
     id: info.id,
     titre: <h2 className = "infos-titre">{info.title}</h2>,

@@ -1,3 +1,6 @@
+/*ce bloc de code contient les éléments css applicables
+à l'intégralité du projet.*/
+
 @font-face {
   font-family: 'MontserratLight';
   src: url('fonts/Montserrat-Light.ttf') format('truetype');
@@ -16,12 +19,6 @@
 body, p, h1, figure, ul, li {
   margin: 0;
   all: unset;
-  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;*/
 }
 
 code {

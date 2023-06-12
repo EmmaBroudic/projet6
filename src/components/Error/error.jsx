@@ -1,6 +1,10 @@
 import './error.css';
 import '../../index.css';
 
+/*Ce bloc de code correspond à la page "error".
+Ce sont les éléments que l'utilisateur verra affiché
+s'il se trompe d'url.*/
+
 function Error() {
     return (
         <div className = "error">
