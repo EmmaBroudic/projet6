@@ -21,11 +21,12 @@
 }
 
 .title {
-    width: 95%;
+    width: 82%;
 }
 
 .buttonup, .buttondown {
-    width: 5%;
+    display: relative;
+    width: 8%;
     text-decoration: none;
     border: 0px;
     background-color: #FF6060;
