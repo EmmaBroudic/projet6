@@ -9,20 +9,16 @@ function Equipments() {
   const { id } = useParams();
   const logement = annonces.find(appartement => appartement.id === id);
 
-  const annoncesData = logement
-    ? [
-        {
-          id: logement.id,
-          titre: "Equipement",
-          descriptif: logement.equipments.map((item, index) => (
-            <p className="texte-equipement" key={`${index}-${id}+"c"`}>{item}</p>
-          )),
-        },
-      ]
-    : [];
+  const annoncesData = logement ? [{
+    id: logement.id,
+    titre: <h2 className = "equi-titre">{"Equipement"}</h2>,
+    descriptif: logement.equipments.map((item, index) => (
+      <p className="equi-text" key={`${index}-${id}+"c"`}>{item}</p>
+    )),
+  }] : [];
 
   return (
-    <div>
+    <div className = "equi-bloc">
       <ReusableCollapse data={annoncesData} />
     </div>
   );

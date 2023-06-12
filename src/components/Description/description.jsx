@@ -11,15 +11,15 @@ function Description() {
 
   const logement = annonces.find(appartement => appartement.id === id);
 
-  // Extraire les données spécifiques (rating et description) de chaque annonce
   const annoncesData = logement ? [{
     id: logement.id,
-    titre: "Description",
-    descriptif: logement.description,
+    titre: <h2 className = "descri-titre">{"Description"}</h2>,
+    descriptif: <p className = "descri-text">{logement.description}</p>,
   }] : [];
 
+
   return (
-    <div>
+    <div className = "descri-bloc">
       <ReusableCollapse data = { annoncesData } />
     </div>
   );
