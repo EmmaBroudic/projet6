@@ -1,20 +1,11 @@
-.carroussel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.num {
-    position: absolute;
-    color: white;
-    font-size: 18pt;
-    font: Monteserrat;
-    padding-top: 370px;
-}
-
 @media screen and (min-width: 1205px) and (max-width: 1400px) {
+    .carroussel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1200px;
+        margin-bottom: 20px;
+    }
 
     .slide {
         position: relative;
@@ -43,9 +34,24 @@
     .next-button {
         right: 0;
     }
+
+    .num {
+        position: absolute;
+        color: white;
+        font-size: 18pt;
+        font: Monteserrat;
+        padding-top: 370px;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1204px) {
+    .carroussel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 900px;
+        margin-bottom: 20px;
+    }
     
     .slide {
         position: relative;
@@ -79,9 +85,24 @@
         width: 70%;
         height: auto;
     }
+
+    .num {
+        position: absolute;
+        color: white;
+        font-size: 16pt;
+        font: Monteserrat;
+        padding-top: 265px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .carroussel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 700px;
+        margin-bottom: 20px;
+    }
     
     .slide {
         position: relative;
@@ -98,8 +119,8 @@
         background-color: rgba(0, 0, 0, 0);
         border: 0px;
         padding-top: 120px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
         z-index: 1;
     }
     
@@ -112,16 +133,32 @@
     }
 
     .next, .prev {
-        width: 70%;
+        width: 60%;
         height: auto;
     }
+
+    .num {
+        position: absolute;
+        color: white;
+        font-size: 14pt;
+        font: Monteserrat;
+        padding-top: 232px;
+    }
 }
+
 @media screen and (max-width: 767px) {
+    .carroussel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 380px;
+        margin-bottom: 20px;
+    }
     
     .slide {
         position: relative;
-        width: 335px;
-        height: 255px;
+        width: 380px;
+        height: 275px;
         object-fit: cover;
         border-radius: 25px;
         z-index: 0;
@@ -133,8 +170,8 @@
         background-color: rgba(0, 0, 0, 0);
         border: 0px;
         padding-top: 120px;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
         z-index: 1;
     }
     
@@ -149,6 +186,14 @@
     .next, .prev {
         width: 50%;
         height: auto;
+    }
+
+    .num {
+        position: absolute;
+        color: white;
+        font-size: 12pt;
+        font: Monteserrat;
+        padding-top: 240px;
     }
 }
 

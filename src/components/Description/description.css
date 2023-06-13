@@ -8,7 +8,7 @@
     width: 450px;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1400px) {
+@media screen and (min-width: 1205px) and (max-width: 1400px) {
     .descri-bloc {
         display: flex;
         flex-direction: row;
@@ -41,6 +41,39 @@
     }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1204px) {
+    .descri-bloc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px;
+        width: 900px;
+    }
+
+    .bloc-left, .bloc-right {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 370px;
+    }
+
+    .descri-titre {
+        position: static;
+        font-family: MontserratLight;
+        color: white;
+        font-size: 14pt;
+        width: 370px; 
+    }
+
+    .descri-text {
+        position: relative;
+        font-family: MontserratLight;
+        font-size: 14pt;
+        color: #FF6060;
+        width: 370px;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
     .descri-bloc {
@@ -56,7 +89,7 @@
         font-family: MontserratLight;
         color: white;
         font-size: 14pt;
-        width: 300px;
+        width: 280px;
     }
 
     .descri-text {
@@ -64,7 +97,7 @@
         font-family: MontserratLight;
         font-size: 14pt;
         color: #FF6060;
-        width: 300px;
+        width: 280px;
     }
 
 
