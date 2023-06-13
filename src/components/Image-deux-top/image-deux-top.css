@@ -32,7 +32,7 @@
     filter: brightness(70%);
     object-fit: cover;
     width: 85%;
-    height: 120px;
+    height: 240px;
     border-radius: 10px;
     z-index: 0;
   }

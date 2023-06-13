@@ -16,7 +16,7 @@
   src: url('fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
-body, p, h1, figure, ul, li {
+body, p, figure, ul, li {
   margin: 0;
   all: unset;
 }

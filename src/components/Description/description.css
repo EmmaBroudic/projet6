@@ -79,9 +79,16 @@
     .descri-bloc {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         width: 700px; 
         margin: 30px;
+    }
+
+    .bloc-left, .bloc-right {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 300px;
     }
 
     .descri-titre {
@@ -89,7 +96,7 @@
         font-family: MontserratLight;
         color: white;
         font-size: 14pt;
-        width: 280px;
+        width: 300px;
     }
 
     .descri-text {
@@ -97,7 +104,7 @@
         font-family: MontserratLight;
         font-size: 14pt;
         color: #FF6060;
-        width: 280px;
+        width: 300px;
     }
 
 
