@@ -1,6 +1,5 @@
-import Imagetop from '../../components/Image-top/image-top.jsx';
-import Main from '../../components/Main/main.jsx';
-import '../../index.css';
+import Imagetop from '../components/Image-top/image-top.jsx';
+import Main from '../components/Main/main.jsx';
 
 /* Ce bloc de code réunit les différents composants de la page home. */
 

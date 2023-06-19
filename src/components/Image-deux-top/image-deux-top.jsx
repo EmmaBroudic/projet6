@@ -1,6 +1,5 @@
 import img2 from '../../images/IMG2_slider.jpg';
 import './image-deux-top.css';
-import '../../index.css';
 
 /* Ce bloc de code correspond à l'image affichée
 au-dessous du header sur la page à propos.*/

@@ -1,4 +1,4 @@
-@media screen and (min-width: 992px) and (max-width: 1400px) {
+@media screen and (min-width: 992px) {
     .infos-bloc {
         display: flex;
         flex-direction: column;

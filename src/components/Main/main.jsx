@@ -1,6 +1,5 @@
 import Card from '../Card/card.jsx';
 import './main.css';
-import '../../index.css';
 
 /*Ce bloc de code affiche les éléments cards sur la page Home */
 

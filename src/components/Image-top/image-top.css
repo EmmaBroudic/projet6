@@ -2,7 +2,7 @@ h1 {
   all: unset;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1400px) {
+@media screen and (min-width: 992px) {
   .image-top {
     display: flex;
     flex-direction: column;

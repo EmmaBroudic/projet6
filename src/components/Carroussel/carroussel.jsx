@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 import next from '../../images/next.png';
 import previus from '../../images/previus.png';
 import './carroussel.css';
-import '../../index.css';
 
 /* Dans un premier temps, ce bloc de code sélectionne l'identifiant
 indiqué dans l'url afin de retrouver les données correpondant au

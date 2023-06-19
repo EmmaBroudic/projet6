@@ -2,7 +2,6 @@ import React from 'react';
 import ReusableCollapse from '../ReusableCollapse/reu-collapse.jsx';
 import { infos } from '../../data/infos/infos.jsx';
 import './informations.css';
-import '../../index.css';
 
 /* Dans un premier temps, ce bloc de code utilise les données informations présentes
 dans le fichier infos.jsx.

@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { annonces } from '../../data/annonces/annonces.jsx';
 import ReusableCollapse from '../ReusableCollapse/reu-collapse.jsx';
 import './description.css';
-import '../../index.css';
 
 /* Dans un premier temps, ce bloc de code sélectionne l'identifiant
 indiqué dans l'url afin de retrouver les données correpondant au

@@ -12,7 +12,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './rating.css';
-import '../../index.css';
 
 /* Dans un premier temps, ce bloc de code ajoute les fontAwesome.
 Ensuite, il sélectionne l'identifiant

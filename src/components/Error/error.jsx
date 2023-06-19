@@ -1,5 +1,4 @@
 import './error.css';
-import '../../index.css';
 
 /*Ce bloc de code correspond à la page "error".
 Ce sont les éléments que l'utilisateur verra affiché

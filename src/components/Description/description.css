@@ -8,7 +8,7 @@
     width: 450px;
 }
 
-@media screen and (min-width: 1205px) and (max-width: 1400px) {
+@media screen and (min-width: 1205px) {
     .descri-bloc {
         display: flex;
         flex-direction: row;

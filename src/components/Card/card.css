@@ -1,9 +1,7 @@
-@media screen and (min-width: 768px) and (max-width: 1400px) {
+@media screen and (min-width: 768px) {
   .card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .card-item {
