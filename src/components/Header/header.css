@@ -23,7 +23,7 @@
     padding-top: 30px;
   }
 
-  .menu {
+  .menu-left, .menu-right {
     font-family: Montserrat;
     font-size: 16pt;
     color: #FF6060;
@@ -31,10 +31,14 @@
     padding-left: 30px;
   }
   
-  .menu:hover {
+  .menu-left:hover, .menu-right:hover {
     font-family: Montserrat;
     font-size: 16pt;
     color: #FF6060;
+    text-decoration: underline;
+  }
+
+  .menu-left.active, .menu-right.active {
     text-decoration: underline;
   }
 }
@@ -64,7 +68,7 @@
     padding-top: 30px;
   }
 
-  .menu {
+  .menu-left, .menu-right {
     font-family: Montserrat;
     font-size: 16pt;
     color: #FF6060;
@@ -72,10 +76,14 @@
     padding-left: 30px;
   }
   
-  .menu:hover {
+  .menu-left:hover, .menu-right:hover {
     font-family: Montserrat;
     font-size: 16pt;
     color: #FF6060;
+    text-decoration: underline;
+  }
+
+  .menu-left.active, .menu-right.active {
     text-decoration: underline;
   }
 }
@@ -105,7 +113,7 @@
     padding-top: 30px;
   }
 
-  .menu {
+  .menu-left, .menu-right {
     font-family: Montserrat;
     font-size: 16pt;
     color: #FF6060;
@@ -113,10 +121,14 @@
     padding-left: 30px;
   }
   
-  .menu:hover {
+  .menu-left:hover, .menu-right:hover {
     font-family: Montserrat;
     font-size: 16pt;
     color: #FF6060;
+    text-decoration: underline;
+  }
+
+  .menu-left.active, .menu-right.active {
     text-decoration: underline;
   }
 }
@@ -149,7 +161,7 @@
     width: 60%;
   }
   
-  .menu {
+  .menu-left, .menu-right {
     font-family: Montserrat;
     text-transform: uppercase;
     font-size: 10pt;
@@ -158,11 +170,15 @@
     padding-left: 30px;
   }
   
-  .menu:hover {
+  .menu-left:hover, .menu-right:hover {
     font-family: Montserrat;
     text-transform: uppercase;
     font-size: 10pt;
     color: #FF6060;
+    text-decoration: underline;
+  }
+
+  .menu-left.active, .menu-right.active {
     text-decoration: underline;
   }
 }
@@ -195,7 +211,7 @@
     width: 60%;
   }
   
-  .menu {
+  .menu-left, .menu-right {
     font-family: Montserrat;
     text-transform: uppercase;
     font-size: 10pt;
@@ -204,11 +220,15 @@
     padding-left: 20px;
   }
   
-  .menu:hover {
+  .menu-left:hover, .menu-right:hover {
     font-family: Montserrat;
     text-transform: uppercase;
     font-size: 10pt;
     color: #FF6060;
+    text-decoration: underline;
+  }
+
+  .menu-left.active, .menu-right.active {
     text-decoration: underline;
   }
 }
