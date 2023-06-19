@@ -1,22 +1,25 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1205px) {
   .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 98%;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   
   .header-logo {
     max-width: 14%;
-    max-height: 14%;
-    padding-left: 55px;
+    height: 14%;
   }
 
   nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
     padding-top: 30px;
   }
 
@@ -25,7 +28,7 @@
     font-size: 16pt;
     color: #FF6060;
     text-decoration: none;
-    padding-right: 55px;
+    padding-left: 30px;
   }
   
   .menu:hover {
@@ -36,19 +39,103 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 992px) and (max-width: 1204px) {  
   .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 95%;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }  
+
+  .header-logo {
+    max-width: 14%;
+    height: 14%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    padding-top: 30px;
+  }
+
+  .menu {
+    font-family: Montserrat;
+    font-size: 16pt;
+    color: #FF6060;
+    text-decoration: none;
+    padding-left: 30px;
   }
   
+  .menu:hover {
+    font-family: Montserrat;
+    font-size: 16pt;
+    color: #FF6060;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }  
+
+  .header-logo {
+    max-width: 20%;
+    height: 20%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    padding-top: 30px;
+  }
+
+  .menu {
+    font-family: Montserrat;
+    font-size: 16pt;
+    color: #FF6060;
+    text-decoration: none;
+    padding-left: 30px;
+  }
+  
+  .menu:hover {
+    font-family: Montserrat;
+    font-size: 16pt;
+    color: #FF6060;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+  }  
+
   .header-logo {
     padding-top: 20px;
-    padding-left: 40px;
     max-width: 27%;
     height: 27%;
   }
@@ -57,7 +144,8 @@
     display: flex;
     flex-direction: row;
     justify-content: right;
-    padding-top: 20px;
+    align-items: right;
+    padding-top: 30px;
     width: 60%;
   }
   
@@ -67,7 +155,53 @@
     font-size: 10pt;
     color: #FF6060;
     text-decoration: none;
-    padding: 20px;
+    padding-left: 30px;
+  }
+  
+  .menu:hover {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 10pt;
+    color: #FF6060;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 380px;
+  }
+
+ .header-logo {
+    padding-top: 20px;
+    max-width: 27%;
+    height: 27%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    padding-top: 30px;
+    width: 60%;
+  }
+  
+  .menu {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 10pt;
+    color: #FF6060;
+    text-decoration: none;
+    padding-left: 20px;
   }
   
   .menu:hover {
