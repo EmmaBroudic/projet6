@@ -64,7 +64,42 @@ h1 {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .image-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 375px;
+  }
+  
+  .img-top {
+    position: relative;
+    filter: brightness(70%);
+    object-fit: cover;
+    width: 540px;
+    height: 140px;
+    border-radius: 10px;
+    z-index: 0;
+  }
+  
+  .text-img-top {
+    position: absolute;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-size: 22pt;
+    color: #FFFFFF;
+    height: 140px;
+    margin-left: 40px;
+    margin-right: 50px;
+    padding-right: 30px;
+    padding-left: 40px;
+    padding-top: 50px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 599px) {
   .image-top {
     display: flex;
     flex-direction: column;
