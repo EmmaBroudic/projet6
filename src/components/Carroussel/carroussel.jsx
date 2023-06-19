@@ -28,71 +28,41 @@ function Carroussel() {
 
   const photo = logement.pictures;
 
-  /*return (
-    <div className="carroussel">
-      <div>
-        {logement.pictures.map((picture, index) => (
-          <img
-            className="slide"
-            key={`${index}-${id}+"b"`}
-            src={picture}
-            style={{ display: index === currentSlide ? 'flex' : 'none' }}
-            alt={`Slide ${index + 1}`}
-          />
-        ))}
-      </div>
-      <button className="prev-button" onClick={prevSlide}>
-        <img className = "prev" src={previus} alt = "flèche vers le haut" />
-      </button>
-      <button className="next-button" onClick={nextSlide}>
-        <img className = "next" src={next} alt = "flèche vers le haut" />
-      </button>
-      <p className = "num">{currentSlide + 1}/{logement.pictures.length}</p>
-    </div>
-  );
-}
-
-export default Carroussel;*/
-
 return (
   <div className="carroussel">
     {logement.pictures.length < 2 ? (
-      /* Bloc de code 1 */
-      <div>
-        <img
-          className="slide"
-          /*key={`${index}-${id}+"b"`}*/
-          src={photo}
-          /*style={{ display: index === currentSlide ? 'flex' : 'none' }}*/
-          alt={"img1"}
-        />
-      </div>
+          <div>
+            <img
+              className="slide"
+              src = { photo }
+              alt = { "img1" }
+            />
+          </div>
     ) : (
-      /* Bloc de code 2 */
-    <div className="carroussel">
-      <div>
-        {logement.pictures.map((picture, index) => (
-          <img
-            className="slide"
-            key={`${index}-${id}+"b"`}
-            src={picture}
-            style={{ display: index === currentSlide ? 'flex' : 'none' }}
-            alt={`Slide ${index + 1}`}
-          />
-        ))}
-      </div>
-      <button className="prev-button" onClick={prevSlide}>
-        <img className = "prev" src={previus} alt = "flèche vers le haut" />
-      </button>
-      <button className="next-button" onClick={nextSlide}>
-        <img className = "next" src={next} alt = "flèche vers le haut" />
-      </button>
-      <p className = "num">{currentSlide + 1}/{logement.pictures.length}</p>
+          <div className="carroussel">
+            <div>
+              {logement.pictures.map((picture, index) => (
+                <img
+                  className="slide"
+                  key={`${index}-${id}+"b"`}
+                  src={picture}
+                  style={{ display: index === currentSlide ? 'flex' : 'none' }}
+                  alt={`Slide ${index + 1}`}
+                />
+              ))}
+            </div>
+            <button className="prev-button" onClick={prevSlide}>
+              <img className = "prev" src={previus} alt = "flèche vers le haut" />
+            </button>
+            <button className="next-button" onClick={nextSlide}>
+              <img className = "next" src={next} alt = "flèche vers le haut" />
+            </button>
+            <p className = "num">{currentSlide + 1}/{logement.pictures.length}</p>
+          </div>
+        )
+      }
     </div>
-    )
-        }
-    </div>
-);
+  );
 }
 
 export default Carroussel;
