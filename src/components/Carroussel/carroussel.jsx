@@ -29,9 +29,9 @@ function Carroussel() {
   const photo = logement.pictures;
 
 return (
-  <div className="carroussel">
+  <div>
     {logement.pictures.length < 2 ? (
-          <div>
+          <div className="carroussel-slide">
             <img
               className="slide"
               src = { photo }
@@ -39,17 +39,17 @@ return (
             />
           </div>
     ) : (
-          <div className="carroussel">
-            <div>
-              {logement.pictures.map((picture, index) => (
-                <img
-                  className="slide"
-                  key={`${index}-${id}+"b"`}
-                  src={picture}
-                  style={{ display: index === currentSlide ? 'flex' : 'none' }}
-                  alt={`Slide ${index + 1}`}
-                />
-              ))}
+          <div>
+            <div className="carroussel-slide">
+            {logement.pictures.map((picture, index) => (
+              <img
+                className="slide"
+                key={`${index}-${id}+"b"`}
+                src={picture}
+                style={{ display: index === currentSlide ? 'flex' : 'none' }}
+                alt={`Slide ${index + 1}`}
+              />
+            ))}
             </div>
             <button className="prev-button" onClick={prevSlide}>
               <img className = "prev" src={previus} alt = "flèche vers le haut" />
