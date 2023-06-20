@@ -29,7 +29,7 @@ function Carroussel() {
   const photo = logement.pictures;
 
 return (
-  <div>
+  <div className = "carroussel">
     {logement.pictures.length < 2 ? (
           <div className="carroussel-slide">
             <img
@@ -39,8 +39,7 @@ return (
             />
           </div>
     ) : (
-          <div>
-            <div className="carroussel-slide">
+          <div className = "carroussel-slide">
             {logement.pictures.map((picture, index) => (
               <img
                 className="slide"
@@ -50,7 +49,6 @@ return (
                 alt={`Slide ${index + 1}`}
               />
             ))}
-            </div>
             <button className="prev-button" onClick={prevSlide}>
               <img className = "prev" src={previus} alt = "flèche vers le haut" />
             </button>
