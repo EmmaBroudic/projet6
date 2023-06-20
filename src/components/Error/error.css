@@ -1,26 +1,86 @@
-.error {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+@media screen and (min-width: 992px) {
+    .error {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .error-quatre-cent-quatre {
+        font-family: MontserratBold;
+        font-size: 270pt;
+        color: #FF6060;
+    }
+
+    .message-error {
+        font-family: Montserrat;
+        font-size: 25pt;
+        color: #FF6060;
+        margin-bottom: 150px;
+    }
+
+    .retour-home {
+        font-family: Montserrat;
+        font-size: 12pt;
+        color: #FF6060;
+        margin-bottom: 150px;
+    }
 }
 
-.error-quatre-cent-quatre {
-    font-family: MontserratBold;
-    font-size: 270pt;
-    color: #FF6060;
-}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .error {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.message-error {
-    font-family: Montserrat;
-    font-size: 25pt;
-    color: #FF6060;
-    margin-bottom: 150px;
-}
+    .error-quatre-cent-quatre {
+        font-family: MontserratBold;
+        font-size: 200pt;
+        color: #FF6060;
+    }
 
-.retour-home {
-    font-family: Montserrat;
-    font-size: 12pt;
-    color: #FF6060;
-    margin-bottom: 150px;
+    .message-error {
+        font-family: Montserrat;
+        font-size: 20pt;
+        color: #FF6060;
+        margin-bottom: 80px;
+    }
+
+    .retour-home {
+        font-family: Montserrat;
+        font-size: 12pt;
+        color: #FF6060;
+        margin-bottom: 80px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .error {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .error-quatre-cent-quatre {
+        font-family: MontserratBold;
+        font-size: 120pt;
+        color: #FF6060;
+    }
+
+    .message-error {
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16pt;
+        color: #FF6060;
+        margin: 50px;
+    }
+
+    .retour-home {
+        font-family: Montserrat;
+        font-size: 10pt;
+        color: #FF6060;
+        margin-bottom: 60px;
+    }
 }
