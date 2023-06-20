@@ -55,11 +55,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 335px; 
+        width: 82%; 
     }
 
     .infos-titre {
-        width: 335px;
+        width: 85%;
         position: static;
         font-family: MontserratLight;
         color: white;
@@ -67,7 +67,7 @@
     }
 
     .infos-text {
-        width: 335px;
+        width: 85%;
         position: relative;
         font-family: MontserratLight;
         font-size: 14pt;

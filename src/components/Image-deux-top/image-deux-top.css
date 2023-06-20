@@ -18,12 +18,12 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
   .image-deux-top {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 100%;
   }
   
@@ -31,7 +31,27 @@
     position: relative;
     filter: brightness(70%);
     object-fit: cover;
-    width: 85%;
+    width: 90%;
+    height: 240px;
+    border-radius: 10px;
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .image-deux-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .img-deux-top {
+    position: relative;
+    filter: brightness(70%);
+    object-fit: cover;
+    width: 92%;
     height: 240px;
     border-radius: 10px;
     z-index: 0;
