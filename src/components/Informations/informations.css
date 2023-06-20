@@ -3,11 +3,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 920px; 
+        width: 80%; 
     }
 
     .infos-titre {
-        width: 920px;
+        width: 80%;
         position: static;
         font-family: MontserratLight;
         color: white;
@@ -15,7 +15,7 @@
     }
 
     .infos-text {
-        width: 920px;
+        width: 80%;
         position: relative;
         font-family: MontserratLight;
         font-size: 14pt;
@@ -29,11 +29,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 600px; 
+        width: 85%; 
     }
 
     .infos-titre {
-        width: 600px;
+        width: 85%;
         position: static;
         font-family: MontserratLight;
         color: white;
@@ -41,7 +41,7 @@
     }
 
     .infos-text {
-        width: 600px;
+        width: 85%;
         position: relative;
         font-family: MontserratLight;
         font-size: 14pt;

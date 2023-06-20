@@ -4,12 +4,14 @@
         flex-direction: column;
         justify-content: right;
         width: 95%;
+        border: 3px solid black;
     }
     
     .host {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        border: 3px solid black;
     }
     
     .nom {
@@ -23,6 +25,7 @@
         color:  #FF6060;
         margin-right: 30px;
         margin-top: 20px;
+        border: 3px solid black;
     }
     
     .img-host {
@@ -30,10 +33,12 @@
         height: auto;
         object-fit: cover;
         border-radius: 50px;
+        border: 3px solid black;
     }
     
     .rating {
         margin-top: 20px;
+        border: 3px solid black;
     }
 }
 
