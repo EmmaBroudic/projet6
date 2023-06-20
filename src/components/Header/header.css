@@ -1,4 +1,4 @@
-@media screen and (min-width: 1205px) {
+@media screen and (min-width: 992px) {
   .header {
     display: flex;
     flex-direction: row;
@@ -133,7 +133,7 @@
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
     display: flex;
     flex-direction: row;
@@ -141,12 +141,13 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
+    margin-left: 50px;
+    margin-right: 50px;
   }  
 
   .header-logo {
+    display: flex;
+    justify-content: left;
     padding-top: 20px;
     max-width: 27%;
     height: 27%;
@@ -168,56 +169,6 @@
     color: #FF6060;
     text-decoration: none;
     padding-left: 30px;
-  }
-  
-  .menu-left:hover, .menu-right:hover {
-    font-family: Montserrat;
-    text-transform: uppercase;
-    font-size: 10pt;
-    color: #FF6060;
-    text-decoration: underline;
-  }
-
-  .menu-left.active, .menu-right.active {
-    text-decoration: underline;
-  }
-}
-
-@media screen and (max-width: 599px) {
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 380px;
-  }
-
- .header-logo {
-    padding-top: 20px;
-    max-width: 38%;
-    height: 38%;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: right;
-    padding-top: 30px;
-    width: 60%;
-  }
-  
-  .menu-left, .menu-right {
-    font-family: Montserrat;
-    text-transform: uppercase;
-    font-size: 10pt;
-    color: #FF6060;
-    text-decoration: none;
-    padding-left: 20px;
   }
   
   .menu-left:hover, .menu-right:hover {

@@ -129,7 +129,7 @@
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 668px) and (max-width: 768px) {
   .card {
     display: flex;
     flex-direction: row;
@@ -142,8 +142,8 @@
     background: linear-gradient(1deg, #704d4d, #FF6060);
     border-radius: 10px;
     margin: 20px;
-    width: 500px;
-    height: 500px;
+    width: 530px;
+    height: 530px;
     padding: 20px;
   }
 
@@ -159,7 +159,37 @@
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 550px) and (max-width: 667px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-item {
+    position: relative;
+    background: linear-gradient(1deg, #704d4d, #FF6060);
+    border-radius: 10px;
+    margin: 20px;
+    width: 450px;
+    height: 450px;
+    padding: 20px;
+  }
+
+  h2 {
+    position: absolute;
+    color: white;
+    font-family: MontserratLight;
+    font-size: 11pt;
+    text-align: left;
+    width: 45%;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 549px) {
 
   .card {
     display: flex;
